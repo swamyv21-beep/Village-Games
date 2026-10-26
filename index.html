@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Swami పల్లెటూరు ఆటలు | 1990s Andhra Telangana Village Games</title>
+<meta name="description" content="Play all included Digital Swami village family games in a cinematic, mobile-friendly Chrome experience. Telugu village nostalgia, pass-and-play fun, and responsive game boards.">
+<meta name="theme-color" content="#211923">
+<meta property="og:title" content="Digital Swami పల్లెటూరు ఆటలు">
+<meta property="og:description" content="1990s Andhra and Telangana village-style family games.">
+<style>
+:root{--bg:#fff3e0;--card:#ffffff;--text:#3b1a08;--mute:#8a5a3c;--acc:#e65100;--gold:#f9a825;--line:#ffd8a8;--ok:#2e7d32;--bad:#c62828;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150b30;--card:#241548;--text:#fff1d6;--mute:#c9b6e8;--acc:#ffb300;--gold:#ffd54f;--line:#3d2a70;--ok:#81c784;--bad:#ef9a9a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#150b30;--card:#241548;--text:#fff1d6;--mute:#c9b6e8;--acc:#ffb300;--gold:#ffd54f;--line:#3d2a70;--ok:#81c784;--bad:#ef9a9a;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.4}
+main{max-width:560px;margin:0 auto;padding:14px}
+header{text-align:center;padding:10px 0}
+h1{font-size:1.45rem;margin:4px 0;color:var(--acc)}h2{font-size:1.05rem;margin:0 0 8px}
+.s{color:var(--mute);font-size:.9rem;margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:12px}
+input{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);font-size:1rem;margin-bottom:8px}
+button{font:inherit;font-weight:600;padding:12px 14px;border:0;border-radius:12px;background:var(--acc);color:#fff;cursor:pointer}
+button.g{background:var(--bg);color:var(--text);border:1px solid var(--line)}
+button.gold{background:var(--gold);color:#3b1a08}
+button:disabled{opacity:.55}
+.full{width:100%;margin-bottom:8px}
+.row{display:flex;gap:8px}.row>*{flex:1}
+.hide{display:none}
+.game{display:flex;gap:12px;align-items:center;text-align:left;width:100%;margin-bottom:8px;background:var(--bg);color:var(--text);border:1px solid var(--line)}
+.game span.i{font-size:2rem}.game small{display:block;font-weight:400;color:var(--mute)}
+.lb{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.lb:last-child{border:0}.lb small{color:var(--mute)}
+.bar{height:8px;background:var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+.bar i{display:block;height:100%;background:var(--acc);width:100%}
+.opt{display:block;width:100%;margin-bottom:8px;text-align:left;background:var(--bg);color:var(--text);border:1px solid var(--line)}
+.opt.ok{background:var(--ok);color:#fff}.opt.no{background:var(--bad);color:#fff}
+.heads{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.head{font-size:1.7rem;padding:10px 0;background:var(--bg);border:2px solid var(--line);border-radius:14px}
+.head.on{border-color:var(--gold);background:var(--gold);box-shadow:0 0 14px var(--gold)}
+.head.dead{opacity:.5}
+.pad{position:relative;height:300px;background:var(--bg);border:2px dashed var(--line);border-radius:14px;overflow:hidden}
+.deer{position:absolute;font-size:2.4rem;background:none;padding:0;filter:drop-shadow(0 0 8px var(--gold))}
+.c{text-align:center}.big{font-size:1.3rem;font-weight:700}
+.ab{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin:10px 0}.cl{aspect-ratio:1;padding:2px;background:var(--bg);color:var(--mute);border:1px solid var(--line);border-radius:10px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;font-size:.95rem}.cl.sf{background:var(--line)}.cl.hl{outline:3px solid var(--gold)}.tk{font-size:1.4rem;line-height:1}.tA{color:#e53935}.tB{color:#1e88e5}.tk.sh::after{content:"🔱";font-size:.6rem}.pw{display:flex;gap:6px}.pw button{flex:1;font-size:.8rem;padding:9px 4px}
+#snd{position:fixed;top:calc(env(safe-area-inset-top,0px) + 8px);right:10px;z-index:20;padding:8px 10px}
+.pf{position:fixed;left:50%;top:45%;font-size:1.6rem;pointer-events:none;z-index:30;animation:fly 1.2s ease-out forwards}
+@keyframes fly{to{transform:translate(var(--dx),var(--dy)) rotate(360deg);opacity:0}}
+.toast{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 60px);transform:translateX(-50%);z-index:30;background:var(--acc);color:var(--bg);padding:10px 18px;border-radius:24px;font-weight:700;white-space:nowrap;animation:pop 1.7s ease forwards}
+@keyframes pop{0%{transform:translateX(-50%) scale(.5);opacity:0}15%{transform:translateX(-50%) scale(1.1);opacity:1}85%{opacity:1}100%{transform:translateX(-50%) scale(1);opacity:0}}
+.shake{animation:sh .4s}
+.cws{margin:6px 0 2px;min-height:54px}.cw{display:inline-block;width:32px;height:44px;border-radius:50%/58%;margin:0 6px;position:relative;box-shadow:0 2px 4px rgba(0,0,0,.3)}
+.cw.up{background:#f3e3c0;border:2px solid #b8864b}.cw.up::after{content:"";position:absolute;left:50%;top:18%;width:7px;height:64%;margin-left:-3.5px;border-radius:50%;background:#7a4a1e}
+.cw.dn{background:#c98a45;border:2px solid #8a5a28}.cw.dn::after{content:"";position:absolute;left:50%;top:15%;width:2px;height:70%;margin-left:-1px;background:#f0c88a;border-radius:2px}
+.cw.roll{animation:tumble .85s cubic-bezier(.3,.7,.4,1)}
+@keyframes tumble{0%{transform:translateY(-90px) rotate(0) scaleX(1);opacity:0}30%{opacity:1}55%{transform:translateY(0) rotate(420deg) scaleX(.5)}75%{transform:translateY(-22px) rotate(560deg) scaleX(1)}100%{transform:translateY(0) rotate(720deg) scaleX(1)}}
+.ar{font-size:.8rem;opacity:.45}
+.wc{display:inline-block;width:25px;height:25px;border-radius:50%;position:relative;margin:1px;border:2px solid rgba(60,25,5,.4);box-shadow:inset -3px -4px 6px rgba(0,0,0,.45),inset 2px 2px 4px rgba(255,255,255,.35),0 2px 3px rgba(0,0,0,.45);vertical-align:middle}
+.wc i{position:absolute;left:50%;top:50%;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;box-shadow:inset -1px -1px 2px rgba(0,0,0,.45),inset 1px 1px 1px rgba(255,255,255,.55)}
+.wc{background:radial-gradient(circle at 35% 30%,var(--l),var(--b) 72%)}.wc i{background:var(--k)}
+.tm{position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);transform:translateX(-50%);z-index:25;min-width:190px;text-align:center;background:var(--card);color:var(--text);border:2px solid var(--acc);border-radius:20px;padding:8px 16px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.tm i{display:block;height:5px;border-radius:3px;background:var(--acc);margin-top:5px;transition:width .25s linear}
+.tm.low{border-color:var(--bad);color:var(--bad)}.tm.low i{background:var(--bad)}
+.cdn{display:flex;gap:8px;justify-content:center;margin-top:6px}.cdn span{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:6px 10px;min-width:58px}.cdn b{display:block;font-size:1.4rem;color:var(--acc)}.cdn small{color:var(--mute)}
+.cl.many .wc{width:15px;height:15px;margin:0;border-width:1px}.cl.many .wc i{width:5px;height:5px;margin:-2.5px 0 0 -2.5px}
+.wc.sh::after{content:"🔱";position:absolute;right:-7px;top:-9px;font-size:.7rem}
+@keyframes sh{20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-6px)}80%{transform:translateX(6px)}}
+
+/* Gavalu (cowrie) shells */
+.gs{position:relative;display:inline-block;width:46px;height:66px;margin:4px 7px;border-radius:50%/60%;background:radial-gradient(ellipse at 40% 32%,#fffbd0,#ece08f 55%,#c9b95a);border:2px solid #b9a94d;box-shadow:inset -4px -6px 8px rgba(120,100,20,.35),0 5px 6px rgba(0,0,0,.4)}
+.gs.sm{width:30px;height:44px;margin:0 5px;border-width:1px}
+.gs.up::after{content:"";position:absolute;left:50%;top:14%;width:10px;height:72%;margin-left:-5px;border-radius:6px;background:repeating-linear-gradient(0deg,#efe6bb 0 2px,#3a1f2e 2px 6px);box-shadow:0 0 0 2px #cdbf7c,inset 0 0 3px #000}
+.gs.sm.up::after{width:7px;margin-left:-3.5px}
+.gs.dn::after{content:"";position:absolute;left:50%;top:50%;width:56%;height:52%;margin:-26% 0 0 -28%;border-radius:50%;background:radial-gradient(#d9d06c,#bcb04a 70%,transparent);opacity:.75}
+.gs.roll{animation:tumble .9s cubic-bezier(.3,.7,.4,1)}
+/* Deepavali 3D look */
+#pops{position:fixed;left:50%;top:36%;transform:translateX(-50%);z-index:40;display:flex;flex-direction:column;gap:10px;align-items:center;pointer-events:none;width:90vw;max-width:420px}
+.pop{pointer-events:auto;background:var(--card);color:var(--text);border:3px solid var(--gold);border-radius:20px;padding:12px 22px;text-align:center;box-shadow:0 12px 30px rgba(0,0,0,.45);animation:popin .35s cubic-bezier(.2,1.4,.4,1)}
+.pop.dmg{border-color:var(--bad)}.pop b{font-size:1.15rem}
+@keyframes popin{from{transform:scale(.4);opacity:0}to{transform:scale(1);opacity:1}}
+.ft{position:fixed;z-index:35;font-weight:800;color:var(--gold);text-shadow:0 2px 3px rgba(0,0,0,.7);pointer-events:none;white-space:nowrap;animation:ftup 1s ease-out forwards}
+@keyframes ftup{from{transform:translate(-50%,0);opacity:1}to{transform:translate(-50%,-55px);opacity:0}}
+body{background:radial-gradient(circle at 50% -8%,rgba(255,193,7,.28),transparent 55%),var(--bg);background-attachment:fixed}
+button{box-shadow:0 4px 0 rgba(0,0,0,.3);transition:transform .08s,box-shadow .08s}
+button:active:not(:disabled){transform:translateY(3px);box-shadow:0 1px 0 rgba(0,0,0,.3)}
+.card{box-shadow:0 6px 0 rgba(0,0,0,.12),0 16px 26px rgba(0,0,0,.2)}
+.game{transform:perspective(600px) rotateX(2deg)}
+.deer{box-shadow:none!important}
+.abw{perspective:700px;padding:4px 0 18px}
+.abw .ab{transform:rotateX(24deg);transform-style:preserve-3d;transform-origin:50% 75%;padding:8px;margin:10px 0;background:linear-gradient(135deg,#9a6330,#5d3a1a);border-radius:14px;box-shadow:0 22px 30px rgba(0,0,0,.45),0 6px 0 #3e2510}
+.cl{transform-style:preserve-3d;box-shadow:0 3px 0 rgba(0,0,0,.3)}
+.cl .wc{transform:translateZ(12px);box-shadow:inset -3px -4px 6px rgba(0,0,0,.45),inset 2px 2px 4px rgba(255,255,255,.35),0 7px 5px rgba(0,0,0,.5)}
+#hero canvas{display:block;margin:0 auto;max-width:100%}
+.crw{background:radial-gradient(circle at 20% 30%,rgba(0,0,0,.14) 0 2px,transparent 3px),linear-gradient(135deg,#b07a44,#8b5a2b 55%,#a06a38);background-size:16px 16px,auto;border:4px solid #ffd54f;border-radius:14px;padding:8px;box-shadow:0 0 0 3px #d99a00,0 14px 24px rgba(0,0,0,.4)}
+#crr{width:100%}
+/* Village mud ground */
+.abw .ab{background:radial-gradient(circle at 20% 30%,rgba(0,0,0,.14) 0 2px,transparent 3px),radial-gradient(circle at 72% 62%,rgba(255,235,200,.12) 0 2px,transparent 3px),linear-gradient(135deg,#b07a44,#8b5a2b 55%,#a06a38);background-size:16px 16px,21px 21px,auto;border-radius:6px 6px 14px 14px;box-shadow:0 22px 30px rgba(0,0,0,.45),0 6px 0 #5a3719}
+.cl{background:rgba(90,50,20,.22);border:2px solid rgba(255,250,235,.88);border-radius:3px;color:rgba(255,250,235,.95);box-shadow:inset 0 0 6px rgba(60,30,10,.5)}
+.cl.sf{background:rgba(255,250,235,.16);font-weight:800}
+.ar{opacity:.75;color:#fff8e6}
+.vil{position:relative;overflow:hidden;display:flex;justify-content:space-around;align-items:flex-end;font-size:1.7rem;line-height:1.1;padding:8px 6px 0;margin-top:8px;border-radius:16px 16px 0 0;background:linear-gradient(#ff9a56,#ffd89b 70%,#fff0c9)}
+.vil .mv{position:absolute;bottom:0;left:-10%;font-size:1.3rem;animation:walk 14s linear infinite}
+@keyframes walk{to{left:105%}}
+/* Yellow borders + village mud popups */
+.abw .ab{border:4px solid #ffd54f;box-shadow:0 22px 30px rgba(0,0,0,.45),0 6px 0 #d99a00}
+.cl{border-color:#ffd54f;box-shadow:inset 0 0 6px rgba(60,30,10,.45),0 3px 0 #c58f00}
+.wc{border-color:rgba(255,213,79,.85)}
+.pop{background:radial-gradient(circle at 20% 30%,rgba(0,0,0,.14) 0 2px,transparent 3px),radial-gradient(circle at 72% 62%,rgba(255,235,200,.12) 0 2px,transparent 3px),linear-gradient(135deg,#b07a44,#8b5a2b 55%,#a06a38);background-size:16px 16px,21px 21px,auto;color:#fff8e6;border:4px solid #ffd54f;box-shadow:0 0 0 3px #d99a00,0 14px 30px rgba(0,0,0,.5)}
+.pop::before{content:"\1F33E\1F6D6\1F334\1F6D6\1F33E";display:block;font-size:1.2rem;letter-spacing:6px;margin-bottom:4px}
+.pop.dmg{border-color:#ffd54f;box-shadow:0 0 0 3px #d99a00,0 0 24px rgba(229,57,53,.75),0 14px 30px rgba(0,0,0,.5)}
+
+/* Golilla Atta: natural glass marbles + visible jump physics */
+
+/* Indian mythology memory-match game */
+.memgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-width:440px;margin:12px auto}
+.memcard{aspect-ratio:3/4;min-height:72px;padding:5px;border:2px solid #ffd54f;border-radius:12px;background:linear-gradient(145deg,#8b451f,#5d2d16);color:#fff8e6;box-shadow:0 4px 0 rgba(0,0,0,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;overflow:hidden}
+.memcard .mi{font-size:clamp(1.45rem,7vw,2.2rem);line-height:1.1}
+.memcard small{font-size:clamp(.58rem,2.5vw,.75rem);line-height:1.1;overflow-wrap:anywhere}
+.memcard.revealed,.memcard.matched{background:linear-gradient(145deg,#fff3c4,#f9c74f);color:#48220c;border-color:#e65100}
+.memcard.matched{opacity:.82;box-shadow:inset 0 0 0 2px #2e7d32}
+.memcard:focus-visible{outline:3px solid #1565c0;outline-offset:2px}
+@media(max-width:360px){.memgrid{gap:5px}.memcard{min-height:62px;border-radius:9px}}
+
+.gb{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;padding:10px;max-width:380px;margin:8px auto;background:radial-gradient(circle at 20% 30%,rgba(0,0,0,.14) 0 2px,transparent 3px),linear-gradient(135deg,#b07a44,#8b5a2b 55%,#a06a38);background-size:16px 16px,auto;border:4px solid #ffd54f;border-radius:18px;box-shadow:0 0 0 3px #d99a00,0 14px 24px rgba(0,0,0,.4)}
+.gc{aspect-ratio:1;border:0;padding:0;border-radius:50%;background:none;box-shadow:none;position:relative;display:block;width:100%}
+.gc.none{visibility:hidden}
+.gc.hole{background:radial-gradient(circle at 50% 40%,#2a170a,#5a3719 85%);box-shadow:inset 0 3px 6px rgba(0,0,0,.75)}
+.gc.m{background:radial-gradient(circle at 27% 22%,rgba(255,255,255,.98) 0 4%,rgba(255,255,255,.72) 7%,transparent 18%),radial-gradient(circle at 35% 30%,var(--mc) 0 22%,var(--md) 62%,#171717 100%);border:1px solid rgba(255,255,255,.72);box-shadow:inset -4px -5px 8px rgba(0,0,0,.52),inset 3px 3px 5px rgba(255,255,255,.55),0 5px 7px rgba(0,0,0,.62);transition:transform .16s,filter .16s}
+.gc.m::after{content:"";position:absolute;inset:12% 16% 58% 18%;border-radius:50%;background:rgba(255,255,255,.38);filter:blur(2px);pointer-events:none}
+.gc.m.hopfx{animation:goli-hop .38s cubic-bezier(.2,.7,.25,1)}
+@keyframes goli-hop{0%{transform:translateY(0) scale(1);filter:brightness(1)}38%{transform:translateY(-22px) scale(1.12);filter:brightness(1.2)}70%{transform:translateY(-10px) scale(1.05)}100%{transform:translateY(0) scale(1);filter:brightness(1)}}
+.gc.m.sel{transform:scale(1.14) translateY(-3px);outline:3px solid #ffd54f}
+.gc.hole.tgt{outline:3px dashed #ffd54f;animation:gpulse .7s infinite alternate}
+@keyframes gpulse{to{box-shadow:inset 0 3px 6px rgba(0,0,0,.75),0 0 14px #ffd54f}}
+.ab.n7 .wc{width:19px;height:19px;margin:0}.ab.n7 .cl{border-width:1px}.ab.n7 .wc.sh::after{font-size:.55rem;right:-5px;top:-7px}
+
+/* flat board (no 3D) + Satyabhama animation */
+.abw{perspective:none!important}.abw .ab{transform:none!important;transform-style:flat!important}
+.cl{transform-style:flat!important}.cl .wc{transform:none!important;box-shadow:inset -2px -3px 5px rgba(0,0,0,.4),inset 2px 2px 3px rgba(255,255,255,.35),0 1px 2px rgba(0,0,0,.4)!important}
+.cl.sf{background:rgba(255,213,79,.3)!important}
+.nk{position:relative;height:74px;font-size:2.3rem;display:flex;justify-content:space-between;align-items:center;padding:0 14px}
+.nk .sb{animation:sbpose .9s ease-out}
+@keyframes sbpose{0%{transform:scale(.6)}40%{transform:scale(1.2) rotate(-6deg)}100%{transform:none}}
+.nk .ar2{position:absolute;left:30%;top:52%;width:44px;height:4px;background:#ffd54f;border-radius:2px;opacity:0;animation:arrfly .6s .5s ease-in forwards}
+.nk .ar2::after{content:"";position:absolute;right:-8px;top:-4px;border-left:10px solid #ffd54f;border-top:6px solid transparent;border-bottom:6px solid transparent}
+@keyframes arrfly{0%{left:28%;opacity:1}100%{left:60%;opacity:1}}
+.nk .nks{animation:nkdie 1.8s 1s forwards}
+@keyframes nkdie{0%{transform:none}15%{transform:translateX(-7px) rotate(-10deg)}30%{transform:translateX(7px) rotate(10deg)}100%{transform:translateY(34px) rotate(100deg) scale(.35);opacity:0}}
+.nk .bm{position:absolute;right:12%;top:12px;opacity:0;animation:boom .6s 1s forwards}
+@keyframes boom{0%{opacity:1;transform:scale(.3)}100%{opacity:0;transform:scale(2.4)}}
+
+/* SOS */
+.sosw{position:relative;max-width:420px;margin:0 auto}
+.sosb{display:grid;gap:3px;padding:8px;background:radial-gradient(circle at 20% 30%,rgba(0,0,0,.14) 0 2px,transparent 3px),linear-gradient(135deg,#b07a44,#8b5a2b 55%,#a06a38);background-size:16px 16px,auto;border:4px solid #ffd54f;border-radius:14px;box-shadow:0 0 0 3px #d99a00,0 14px 24px rgba(0,0,0,.4)}
+.sosc{aspect-ratio:1;padding:0;font-size:1.4rem;line-height:1;background:rgba(90,50,20,.25);border:2px solid #ffd54f;border-radius:4px;box-shadow:none;color:#fff8e6}
+.sosv{position:absolute;left:12px;top:12px;width:calc(100% - 24px);height:calc(100% - 24px);pointer-events:none}
+.pb{display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:center;font-size:.85rem;margin-top:6px}
+.pb span{opacity:.85;color:#f3c45b;animation:pbg 10s infinite}.pb span:nth-child(2){animation-delay:2s}.pb span:nth-child(3){animation-delay:4s}.pb span:nth-child(4){animation-delay:6s}.pb span:nth-child(5){animation-delay:8s}
+@keyframes pbg{0%,18%{opacity:1;text-shadow:0 0 10px var(--gold);transform:scale(1.14)}28%,100%{opacity:.6;text-shadow:none;transform:none}}
+.cl .el{font-size:1.2rem;line-height:1}.ab.n7 .el{font-size:.9rem}
+
+/* 1990s Andhra–Telangana village visual skin */
+:root{--bg:#ead7b2;--card:#fff5df;--text:#392719;--mute:#76583d;--acc:#8b3f20;--gold:#d69b32;--line:#c6a477;--ok:#41633d;--bad:#9f3025;color-scheme:light}
+body{background-color:var(--bg);background-image:radial-gradient(ellipse at 15% 10%,rgba(255,249,222,.9),transparent 38%),linear-gradient(180deg,#e8d3a8 0%,#d6b17b 100%);font-family:system-ui,-apple-system,"Noto Sans Telugu","Nirmala UI",sans-serif}
+main{max-width:760px;padding:14px}
+header{position:relative;padding:14px 10px 18px;margin-bottom:10px;border:2px solid #9b6b3b;border-radius:16px;background:linear-gradient(180deg,rgba(255,246,218,.95),rgba(218,182,123,.94));box-shadow:inset 0 0 0 4px rgba(120,75,36,.08),0 7px 16px #55381c20}
+header:before{content:"🌿  మామిడి తోరణం  🌿";display:block;font-size:.8rem;color:#496344;letter-spacing:.06em;margin-bottom:6px}
+h1{color:#76371d;text-shadow:1px 1px #f6dfaa;line-height:1.25}
+.card{background:linear-gradient(145deg,#fff7e5,#f0dfbd);border:1px solid #b98b55;border-radius:12px;box-shadow:0 5px 12px rgba(73,45,20,.12),inset 0 1px rgba(255,255,255,.8)}
+button{background:#8b3f20;color:#fff4dc;border-radius:8px;box-shadow:0 2px 0 #5f2b18;touch-action:manipulation}
+button.g{background:#ead7b2;color:#392719;border:1px solid #b98b55;box-shadow:none}
+button.gold{background:#e0b04c;color:#392719}
+input{background:#fff9e9;border-color:#b98b55;color:#392719;border-radius:7px}
+.game{background:linear-gradient(110deg,#f8e9c9,#e8d0a2);border:1px solid #b98b55;border-radius:9px;color:#392719}
+.game span.i{filter:drop-shadow(1px 2px 1px #8a653b55)}
+.lb{border-bottom:1px dashed #c6a477}
+@media(max-width:420px){main{padding:9px}header{padding:12px 8px}h1{font-size:1.25rem}.card{padding:11px}}
+
+/* Cinematic village-night interface + accessible contrast */
+:root{--bg:#211b2b;--card:#302638;--text:#fff4dc;--mute:#dfc9a4;--acc:#e56b3f;--gold:#f3c45b;--line:#70513f;--ok:#91c987;--bad:#ff9384;color-scheme:dark}
+body{background:#1b1722;background-image:radial-gradient(ellipse at 50% -10%,#6b3d34 0%,transparent 48%),linear-gradient(180deg,#211b2b 0%,#17151c 100%);color:var(--text)}
+main{max-width:820px;padding:clamp(10px,3vw,22px)}
+header{overflow:hidden;border:1px solid #a66e48;background:linear-gradient(180deg,#392938,#27202b 80%);box-shadow:0 16px 40px #0005,inset 0 0 0 1px #f3c45b22}
+header:before{color:#f3c45b;text-shadow:0 0 12px #f3c45b66}
+h1{color:#ffe0a0;text-shadow:0 2px 18px #ff8a4b55}
+.card{background:linear-gradient(145deg,#352a38,#29222e);border-color:#654a4b;box-shadow:0 10px 24px #0003,inset 0 1px #ffffff0a;color:var(--text)}
+button{background:linear-gradient(135deg,#f08a4b,#c94d32);color:#fffaf0;box-shadow:0 3px 0 #7b3328,0 5px 14px #0002}
+button.g{background:#39303d;color:#fff4dc;border-color:#725766;box-shadow:none}
+button.gold{background:linear-gradient(135deg,#ffdc7c,#e5a936);color:#352313;box-shadow:0 3px 0 #8e6126}
+input{background:#211b27;color:#fff4dc;border-color:#725766}
+.game{background:linear-gradient(115deg,#40313d,#2d2633);color:#fff4dc;border-color:#735657;min-height:68px;transition:transform .18s,border-color .18s,filter .18s}
+.game:hover,.game:focus-visible{transform:translateY(-2px);border-color:#f3c45b;filter:brightness(1.12)}
+button:focus-visible,input:focus-visible{outline:3px solid #ffe08a;outline-offset:3px}
+.s{color:#dfc9a4}
+.cinema-scene{position:relative;height:clamp(150px,30vw,230px);margin:4px 0 12px;border-radius:12px;overflow:hidden;border:1px solid #c08055;background:linear-gradient(180deg,#201e3c 0%,#5a3548 48%,#df8b54 100%);box-shadow:inset 0 -22px 35px #231a2b}
+.cinema-scene:before{content:"";position:absolute;left:-8%;right:-8%;bottom:-28%;height:72%;background:#292c2b;clip-path:polygon(0 45%,16% 22%,29% 38%,44% 8%,58% 32%,75% 15%,100% 40%,100% 100%,0 100%);}
+.cinema-scene:after{content:"";position:absolute;left:-4%;right:-4%;bottom:-39%;height:73%;background:#171f1d;clip-path:polygon(0 40%,20% 18%,38% 44%,57% 20%,76% 36%,100% 10%,100% 100%,0 100%);}
+.cinema-scene .moon{position:absolute;right:13%;top:10%;font-size:2.4rem;color:#ffe9ac;text-shadow:0 0 24px #ffe5a055;animation:moonGlow 4s ease-in-out infinite alternate}
+.cinema-scene .hut,.cinema-scene .tree,.cinema-scene .lamp{position:absolute;z-index:2;filter:drop-shadow(0 4px 4px #0005)}
+.cinema-scene .hut-a{left:17%;bottom:24%;font-size:clamp(2rem,7vw,3.5rem)}.cinema-scene .hut-b{right:24%;bottom:24%;font-size:clamp(1.7rem,6vw,3rem)}
+.cinema-scene .tree-a{left:3%;bottom:20%;font-size:clamp(2rem,7vw,3.5rem)}.cinema-scene .tree-b{right:3%;bottom:20%;font-size:clamp(2rem,7vw,3.5rem)}
+.cinema-scene .lamp-a{left:39%;bottom:16%;font-size:1.25rem;animation:lampGlow 1.8s ease-in-out infinite alternate}.cinema-scene .lamp-b{right:40%;bottom:17%;font-size:1.15rem;animation:lampGlow 2.1s ease-in-out infinite alternate}
+.scene-caption{position:absolute;z-index:3;bottom:8px;left:0;right:0;text-align:center;font-size:.82rem;letter-spacing:.06em;color:#ffedc9;text-shadow:0 2px 5px #000}
+@keyframes moonGlow{to{filter:brightness(1.3);transform:translateY(-3px)}}@keyframes lampGlow{to{filter:drop-shadow(0 0 9px #ffb34f);transform:scale(1.08)}}
+@media(max-width:480px){.row{gap:6px}.row>*{min-width:0}button{padding:11px 10px}.game{gap:9px}.game span.i{font-size:1.7rem}.cinema-scene{border-radius:9px}}
+
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+
+
+/* Chrome + mobile-first polish: stable viewport, tap targets, board overflow, cinematic contrast */
+:root{--bg:#17131b;--card:#241c25;--text:#fff4df;--mute:#d1bca7;--acc:#c94b2c;--gold:#f4c45b;--line:#674a3c;--ok:#287a50;--bad:#b83a37;color-scheme:dark}
+html{min-height:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:smooth;overscroll-behavior-y:contain}
+body{min-height:100vh;min-height:100dvh;background:radial-gradient(ellipse at 50% -12%,#56342b 0%,#211923 43%,#111017 100%);-webkit-tap-highlight-color:transparent}
+main{width:100%;max-width:760px;padding:clamp(10px,3vw,22px);padding-bottom:calc(20px + env(safe-area-inset-bottom,0px))}
+header{padding:8px 0 14px}
+h1{color:#ffd779;text-shadow:0 2px 0 #5b281f,0 0 22px #ef8e3d44;line-height:1.25}
+.card{background:linear-gradient(145deg,rgba(52,38,43,.98),rgba(31,26,34,.98));border-color:#77513d;box-shadow:0 12px 30px #0003,inset 0 1px #ffffff0a}
+button,input,select,textarea{font:inherit;touch-action:manipulation}
+button{min-height:44px;box-shadow:0 3px 0 #0003;transition:transform .16s ease,filter .16s ease,box-shadow .16s ease}
+button:active{transform:translateY(1px) scale(.99);box-shadow:0 1px 0 #0003}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #ffe08a;outline-offset:3px}
+.game{min-height:74px;padding:12px;background:linear-gradient(110deg,#42303a,#29232e 72%);border:1px solid #775745;border-radius:14px;color:#fff5e6;box-shadow:0 5px 14px #0002}
+.game small{color:#e0c9b4;line-height:1.35;margin-top:3px}
+.game span.i{width:2.25rem;flex:0 0 2.25rem;text-align:center;filter:drop-shadow(0 3px 4px #0005)}
+input{min-height:44px}
+/* Keep game boards and grids within narrow Chrome viewports */
+.ab,.heads,.memgrid,.board,.grid{max-width:100%}
+.ab{gap:clamp(2px,1vw,5px)}
+.ab button,.ab .cl{min-width:0;overflow:hidden}
+#stage{min-width:0;overflow-wrap:anywhere}
+#stage canvas,#stage svg,#stage img{max-width:100%;height:auto}
+.pad{height:clamp(220px,58vw,340px);touch-action:manipulation}
+.cinema-scene{overflow:hidden;isolation:isolate;box-shadow:inset 0 -28px 45px #170e18aa,0 12px 30px #0003}
+@media(max-width:600px){main{padding:10px;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px))}.card{padding:12px;border-radius:14px}.row{flex-wrap:wrap}.row>*{min-width:min(100%,130px)}.game{gap:9px;margin-bottom:9px}.big{font-size:1.15rem}.pw{flex-wrap:wrap}.pw button{min-width:64px}.heads{gap:4px}.head{min-width:0;font-size:1.35rem;padding:9px 0}.ab .cl{font-size:clamp(.68rem,3vw,.95rem);border-radius:7px}}
+@media(max-width:360px){main{padding:8px}.game{padding:10px;font-size:.94rem}.game span.i{font-size:1.45rem;width:1.8rem;flex-basis:1.8rem}.row>*{min-width:100%}.pb{gap:4px;flex-wrap:wrap}}
+@media(hover:hover){.game:hover{transform:translateY(-2px);border-color:#f4c45b;box-shadow:0 9px 20px #0003}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}button,.game{transition:none}}
+
+/* Three-mode cinematic home screen */
+.home-modes{background:linear-gradient(155deg,var(--card),color-mix(in srgb,var(--acc) 7%,var(--card)));}
+.mode-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0 4px}
+.mode-card{display:grid;grid-template-columns:52px 1fr;grid-template-rows:auto auto auto;column-gap:12px;align-items:center;text-align:left;padding:14px;border:1px solid #b9874b;border-radius:16px;background:linear-gradient(120deg,#3c2830,#241d29 80%);color:#fff4dc;box-shadow:0 5px 0 #160f18,0 12px 22px #0002;min-height:98px}
+.mode-icon{grid-row:1/4;display:grid;place-items:center;font-size:2rem;width:48px;height:48px;border-radius:13px;background:linear-gradient(145deg,#ffe6a3,#d99a35);color:#3a2115;box-shadow:inset 0 1px #fff8}
+.mode-card b{font-size:1.04rem;color:#ffe09a}.mode-card small{font-size:.82rem;color:#e3d0c1;font-weight:400}.mode-cta{font-size:.78rem;color:#ffbd5c;margin-top:4px}
+.mode-card:focus-visible{outline:3px solid #ffe08a;outline-offset:3px}.mode-card:active{transform:translateY(2px)}
+.mode-panel{margin-top:14px;padding:14px;border:1px solid var(--line);border-radius:14px;background:var(--bg)}.mode-panel h3{margin:0 0 10px;font-size:1rem}
+@media(min-width:430px){.mode-grid{grid-template-columns:1fr 1fr}.mode-card:last-child,.mode-card.solo{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){.mode-card{transition:none}}
+
+</style>
+</head>
+<body>
+<main>
+<button class="g" id="snd" aria-label="Toggle music">🔊</button><header><div id="hero" class="cinema-scene" aria-label="Illustrated nostalgic Telugu village evening"><span class="moon">☾</span><span class="hut hut-a">🏡</span><span class="hut hut-b">🏠</span><span class="tree tree-a">🌴</span><span class="tree tree-b">🌳</span><span class="lamp lamp-a">🪔</span><span class="lamp lamp-b">🪔</span><span class="scene-caption">మన ఊరి ఆటలు · మన ఇంటి సందడి</span></div><div id="emo" style="font-size:2rem">🪔✨🎆</div><h1>Digital Swami పల్లెటూరు ఆటలు</h1><p class="s">1990s Andhra &amp; Telangana Village Games · మన ఊరి ఆటలు, మన ఇంటి సందడి</p><div class="pb"><span>🌍 పృథ్వి</span><span>💧 జలం</span><span>🔥 అగ్ని</span><span>🌬️ వాయువు</span><span>🌌 ఆకాశం</span></div></header>
+<div class="card c" id="cd"></div>
+
+<section id="home" class="card home-modes">
+  <h2>Choose your play mode</h2>
+  <p class="s">మీ ఆటను ఎంచుకోండి · Choose how your family wants to play</p>
+  <div class="mode-grid">
+    <button type="button" class="mode-card solo" data-mode="solo"><span class="mode-icon">👵</span><b>Single Player · vs Ammamma</b><small>Just you and Ammamma bot · all games</small><span class="mode-cta">Play with Ammamma ↗</span></button>
+    <button type="button" class="mode-card" data-mode="hotspot"><span class="mode-icon">📶</span><b>Hotspot / Wi-Fi</b><small>Same network · Nearby family</small><span class="mode-cta">Open setup ↗</span></button>
+    <button type="button" class="mode-card" data-mode="online"><span class="mode-icon">🌐</span><b>Online Play</b><small>Play across different networks</small><span class="mode-cta">Open setup ↗</span></button>
+    <button type="button" class="mode-card" data-mode="local"><span class="mode-icon">👨‍👩‍👧‍👦</span><b>Pass &amp; Play</b><small>One phone · Take turns</small><span class="mode-cta">Start on this device ↗</span></button>
+  </div>
+  <div id="mode-solo" class="mode-panel hide">
+    <h3>👵 Single Player · vs Ammamma</h3>
+    <input id="soloName" placeholder="Your player name" maxlength="14" autocomplete="off">
+    <label for="ammaLvl" class="s" style="display:block;text-align:left;margin-top:8px">Ammamma’s skill</label>
+    <select id="ammaLvl" class="full" aria-label="Ammamma skill level" style="margin-bottom:8px"><option value="0">Gentle Ammamma — easy</option><option value="1" selected>Sharp Ammamma — medium</option><option value="2">Kitchen champion — hard</option></select>
+    <button class="full" id="soloStart" type="button">👵 Play with Ammamma</button>
+    <p class="s">Ammamma plays Ashta Chamma, Panchabhuta Chamma, Carrom, SOS and Memory Match against you, and posts scores in the quick games. Rama–Sita Chits needs 4–8 family players, so use Pass &amp; Play for that one.</p>
+    <button class="g full back-modes" type="button">← Back to modes</button>
+  </div>
+  <div id="mode-hotspot" class="mode-panel hide">
+    <h3>📶 Hotspot / Same Wi-Fi</h3><input id="name" placeholder="Your player name" maxlength="14" autocomplete="off">
+    <label for="lanHost" class="s" style="display:block;text-align:left">Host IP and port (WebSocket server required)</label><input id="lanHost" placeholder="e.g. 192.168.1.10:8787" value="" autocomplete="off" inputmode="url">
+    <button class="full" id="create">🪔 Create room</button>
+    <div class="row"><input id="code" placeholder="4-letter room code" maxlength="4" autocomplete="off" style="text-transform:uppercase"><button class="gold" id="join" style="margin-bottom:8px">Join room</button></div>
+    <p class="s">Important: this page cannot host a multiplayer server by itself. Enter the private IP of a device running the game WebSocket server (for example 192.168.43.1:8787). A website domain is not your hotspot IP. Without a server, use Pass &amp; Play.</p>
+    <button class="g full back-modes" type="button">← Back to modes</button>
+  </div>
+  <div id="mode-online" class="mode-panel hide">
+    <h3>🌐 Online Multiplayer</h3><input id="onlineName" placeholder="Your player name" maxlength="14" autocomplete="off">
+    <label for="onlineHost" class="s" style="display:block;text-align:left">Online WebSocket server URL (must be deployed)</label><input
+  id="onlineHost"
+  type="hidden"
+  value=""
+>
+    <div class="row"><input id="onlineCode" placeholder="4-letter room code" maxlength="4" autocomplete="off" style="text-transform:uppercase"><button class="full" id="onlineCreate" type="button">
+  Create Online Room
+</button><button class="gold" id="onlineJoin" style="margin-bottom:8px">Join online</button></div>
+    <p class="s">Online play needs a deployed WebSocket room server and internet access. This HTML file alone does not provide that server.</p>
+    <button class="g full back-modes" type="button">← Back to modes</button>
+  </div>
+  <div id="mode-local" class="mode-panel hide">
+    <h3>👨‍👩‍👧‍👦 Pass &amp; Play</h3>
+    <label for="locals" class="s" style="display:block;text-align:left">Human player names (comma separated)</label>
+    <input id="locals" placeholder="e.g. Swami, Ammu" autocomplete="off" maxlength="120">
+    <label for="botCount" class="s" style="display:block;text-align:left;margin-top:8px">Optional computer / bot players</label>
+    <select id="botCount" class="full" aria-label="Number of optional bot players" style="margin-bottom:8px"><option value="0">No bots — humans only</option><option value="1">Add 1 bot</option><option value="2">Add 2 bots</option><option value="3">Add 3 bots</option><option value="4">Add 4 bots</option><option value="5">Add 5 bots</option><option value="6">Add 6 bots</option><option value="7">Add 7 bots</option></select>
+    <button class="full" id="local">Start pass &amp; play</button>
+    <p class="s">1–8 total players, including bots. Bots take automatic turns in quick score games. Board games use human players only.</p>
+    <button class="g full back-modes" type="button">← Back to modes</button>
+  </div>
+  <p class="s" id="err" style="margin:8px 0 0" role="status" aria-live="polite"></p>
+</section>
+
+<section id="hub" class="hide">
+  <div class="card"><div class="row" style="align-items:center"><div><b id="mode"></b><div class="s" id="share" style="margin:0"></div></div><button class="g" id="leave" style="flex:0 0 auto">Exit</button></div></div>
+  <div class="card"><h2>Choose a game</h2>
+    <button class="game" data-g="trivia"><span class="i">📖</span><span>Deepavali &amp; Ramayana Trivia<small>10 questions, speed bonus</small></span></button>
+    <button class="game" data-g="dahan"><span class="i">🏹</span><span>Narakasura Vadha Archery<small>Hit each of the 10 heads as it glows</small></span></button>
+    <button class="game" data-g="deer"><span class="i">🪔</span><span>Golden Diya Catch<small>20 seconds of lightning reflexes</small></span></button>
+    <button class="game" data-g="brainvita"><span class="i">🔮</span><span>Golilla Atta (Brainvita)<small>Jump marbles, leave just one · solo score</small></span></button>
+    <button class="game" data-g="memory"><span class="i">🧠</span><span>Itihasa Memory Match<small>Match 8 pairs from Indian mythology</small></span></button>
+    <button class="game" data-g="ramasita"><span class="i">🕵️</span><span>Rama–Sita Chits: Find Sita<small>Secret character chits · Rama must identify Sita · 4–8 players</small></span></button>
+    <button class="game" data-g="sos"><span class="i">🕉️</span><span>SOS · Shankh–Om–Shankh<small>2–4 players · mythology word-grid battle</small></span></button>
+    <button class="game" data-g="carrom"><span class="i">🎯</span><span>Village Carrom<small>2 players · village rules, queen cover &amp; dues</small></span></button>
+    <button class="game" data-g="panchabhuta"><span class="i">🌍</span><span>Panchabhuta Chamma (పంచభూతాలు)<small>Ashta Chamma with Earth, Water, Fire, Air &amp; Space squares</small></span></button>
+    <button class="game" data-g="ashta"><span class="i">🐚</span><span>Ashta Chamma + Ammavari Powers<small>2–8 players · cowries, wooden coins &amp; goddess boons · mud-ground board</small></span></button>
+  </div>
+  <div class="card"><h2>🏆 Family leaderboard</h2><div id="lb"></div></div>
+</section>
+
+<section id="play" class="card hide">
+  <div class="row" style="align-items:center"><b id="who"></b><button class="g" id="quit" style="flex:0 0 auto">Quit</button></div>
+  <div id="stage" style="margin-top:10px"></div>
+</section>
+</main>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+function esc(s){var d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function show(id){["home","hub","play"].forEach(function(x){$(x).classList.toggle("hide",x!==id)})}
+var warmed=false;
+function warmServer(){if(warmed||!/^https?:$/.test(location.protocol))return;warmed=true;try{fetch("/health",{cache:"no-store"}).catch(function(){})}catch(e){}}
+function chooseMode(mode){if(mode==="online")warmServer();["solo","hotspot","online","local"].forEach(function(m){$("mode-"+m).classList.toggle("hide",m!==mode)});$("err").textContent="";if(mode==="local")$("locals").focus();else if(mode==="solo")$("soloName").focus();else if(mode==="hotspot")$("name").focus();else $("onlineName").focus()}
+document.querySelectorAll("[data-mode]").forEach(function(b){b.addEventListener("click",function(){chooseMode(b.getAttribute("data-mode"))})});
+document.querySelectorAll(".back-modes").forEach(function(b){b.addEventListener("click",function(){["solo","hotspot","online","local"].forEach(function(m){$("mode-"+m).classList.add("hide")});$("err").textContent=""})});
+var R=null,me={name:"",s:{}},local=null,cleanups=[];
+var AMMA_NAME="Ammamma 👵",AMMA_LVL=1,lastScore=0,ammaGo=false;
+var AMMA_LV=["Gentle","Sharp","Kitchen champion"];
+function isAmma(n){return !R&&!!local&&local.some(function(x){return x.ammamma&&x.name===n})}
+function isSolo(){return !R&&!!local&&local.some(function(x){return x.ammamma})}
+var AMMA_SAY={nice:["Bhale, kanna! 👏","Ammamma ki ee aata baaga vachchu 😄","Choodu, Ammamma pettindi! 🪔","Ela undi, kanna? 😉"],lose:["Ayyo, Ammamma ottipoyindi! 😅 Shabash, kanna!","Nuvvu ippudu champion, kanna! 🏆"],win:["Ammamma gelichindi! Next time better luck, kanna 🌺","Ammamma ni evaru odinchagalaru? 😄"]};
+function ammaSay(k){var a=AMMA_SAY[k]||AMMA_SAY.nice;toast("👵 "+a[Math.floor(Math.random()*a.length)])}
+function ammaScore(g){var M={trivia:130,dahan:100,deer:130,brainvita:100}[g]||100,lo=[.25,.45,.65][AMMA_LVL],hi=[.55,.75,.95][AMMA_LVL];return Math.round(M*(lo+Math.random()*(hi-lo)))}
+var ICON={trivia:"📖",dahan:"🏹",deer:"🪔",ashta:"🐚",carrom:"🎯",brainvita:"🔮",memory:"🧠",ramasita:"🕵️",sos:"🕉️"};
+try{$("name").value=localStorage.getItem("vu-name")||""}catch(e){}
+
+function code4(){var a="ABCDEFGHJKMNPQRSTUVWXYZ",s="";for(var i=0;i<4;i++)s+=a[Math.floor(Math.random()*a.length)];return s}
+function makeLanRoom(socket,roomCode,name){
+  var peerId="p-"+Math.random().toString(36).slice(2)+Date.now().toString(36),all=[],presence={name:name,s:{}},peerFns=[],eventFns={},closed=false,joined=false;
+  function send(obj){if(socket.readyState===WebSocket.OPEN)socket.send(JSON.stringify(obj))}
+  function peerSnapshot(list){all=(list||[]).map(function(x){return{peer:x.peer,presence:x.presence||{name:"Player",s:{}},isMe:x.peer===peerId}});peerFns.slice().forEach(function(fn){try{fn(all)}catch(e){}});renderLB()}
+  socket.addEventListener("close",function(){if(closed)return;closed=true;all=[];if(joined){toast("🔌 Connection lost. Tap Exit, then create or join the room again.");$("err").textContent="Connection to the room was lost."}});
+  socket.addEventListener("message",function(ev){var m;if(closed)return;try{m=JSON.parse(ev.data)}catch(e){return}
+    if(m.type==="welcome"){peerId=m.peer;send({type:"presence",room:roomCode,presence:presence})}
+    else if(m.type==="peers"){joined=true;peerSnapshot(m.peers)}
+    else if(m.type==="event"){(eventFns[m.name]||[]).slice().forEach(function(fn){try{fn({isMe:m.peer===peerId,data:m.data,peer:m.peer})}catch(e){}})}
+    else if(m.type==="error")$("err").textContent=m.message||"LAN server error";
+  });
+  return {peer:peerId,presence:function(v){presence=v||presence;send({type:"presence",room:roomCode,presence:presence});return Promise.resolve()},
+    peers:function(){return all.slice()},onPeers:function(fn){peerFns.push(fn);fn(all);return function(){peerFns=peerFns.filter(function(x){return x!==fn})}},
+    emit:function(event,data){send({type:"event",room:roomCode,name:event,data:data});return Promise.resolve()},
+    on:function(event,fn){(eventFns[event]||(eventFns[event]=[])).push(fn);return function(){eventFns[event]=(eventFns[event]||[]).filter(function(x){return x!==fn})}},
+    leave:leaveFn};
+  function leaveFn(){closed=true;try{socket.close()}catch(e){}all=[];peerSnapshot([])}
+}
+async function online(code,mode,intent,tries){
+  mode=mode||"hotspot";
+  var name=(mode==="online"?$("onlineName").value:$("name").value).trim()||"Player",host=(mode==="online"?($("onlineHost").value||(location.protocol==="https:"?"wss://":"ws://")+location.host):$("lanHost").value).trim();
+  try{localStorage.setItem("vu-name",name);localStorage.setItem(mode==="online"?"vu-online-host":"vu-lan-host",host)}catch(e){}
+  if(!host){$("err").textContent=mode==="online"?"Enter your deployed secure WebSocket URL (wss://…).":"Enter the private hotspot host IP, e.g. 192.168.43.1:8787. Your website address cannot act as the hotspot server.";return}
+  if(mode!=="online"){
+    var rawHost=host.replace(/^ws:\/\//i,"").split("/")[0].split(":")[0];
+    var oct=rawHost.split(".").map(Number);
+    var ipv4=oct.length===4&&oct.every(function(n){return Number.isInteger(n)&&n>=0&&n<=255});
+    var priv=ipv4&&(oct[0]===10||(oct[0]===192&&oct[1]===168)||(oct[0]===172&&oct[1]>=16&&oct[1]<=31));
+    if(!priv){$("err").textContent="Use a private LAN IP such as 192.168.43.1:8787, not a public website domain. A WebSocket server must already be running on that device. If you don't have one, choose Pass & Play.";return}
+  }
+  if(mode!=="online"&&!/^wss?:\/\//i.test(host))host="ws://"+host;
+  if(mode==="online"&&!/^wss:\/\//i.test(host)&&!(location.protocol!=="https:"&&/^ws:\/\//i.test(host))){ $("err").textContent="Online mode requires a secure wss:// server URL.";return }
+  if (
+  mode !== "online" &&
+  !/:[0-9]+$/.test(host.replace(/^wss?:\/\//i, ""))
+) {
+  host = host.replace(/\/$/, "") + ":8787";
+}
+  $("err").textContent=mode==="online"?"Connecting to online room… (the free server may take up to a minute to wake up)":"Connecting to hotspot/Wi-Fi room…";
+  try{
+    var socket=new WebSocket(host);await new Promise(function(resolve,reject){var t=setTimeout(function(){reject(new Error("Connection timed out. Check host IP, same Wi-Fi, firewall and server."))},mode==="online"?60000:7000);socket.addEventListener("open",function(){clearTimeout(t);resolve()},{once:true});socket.addEventListener("error",function(){clearTimeout(t);reject(new Error("Could not connect. Make sure the LAN server is running and both devices share the same Wi-Fi/hotspot."))},{once:true})});
+    R=makeLanRoom(socket,"vu-"+code.toLowerCase(),name);socket.send(JSON.stringify({type:"join",room:"vu-"+code.toLowerCase(),name:name,intent:intent||""}));
+    var ack=await new Promise(function(resolve){
+      var to=setTimeout(function(){resolve({type:"timeout"})},10000);
+      socket.addEventListener("message",function h(ev){var m;try{m=JSON.parse(ev.data)}catch(e){return}if(m.type==="peers"||m.type==="error"){clearTimeout(to);socket.removeEventListener("message",h);resolve(m)}});
+      socket.addEventListener("close",function(){clearTimeout(to);resolve({type:"closed"})},{once:true});
+    });
+    if(ack.type!=="peers"){
+      try{R.leave()}catch(e){}R=null;
+      if(ack.type==="error"&&ack.code==="exists"&&intent==="create"&&(tries||0)<5)return online(code4(),mode,"create",(tries||0)+1);
+      $("err").textContent=ack.type==="error"?(ack.message||"Could not join the room."):"The server did not answer. Please try again.";
+      return;
+    }
+  }catch(e){try{socket&&socket.close()}catch(z){}R=null;$("err").textContent=e.message||String(e);return}
+  me={name:name,s:{}};local=null;R.presence({name:name,s:{}}).catch(function(){});R.onPeers(renderLB);
+  $("mode").textContent=(mode==="online"?"Online room · ":"Hotspot / Wi-Fi room · ")+code;
+  $("share").textContent="Room code: "+code+" · up to 8 players · "+(mode==="online"?"internet required":"same network");
+  $("err").textContent="";show("hub");renderLB();
+}
+try{
+  var savedLan=localStorage.getItem("vu-lan-host")||"";
+  // Never prefill the website's public hostname as if it were a local hotspot server.
+  if(/^((10\.)|(192\.168\.)|(172\.(1[6-9]|2[0-9]|3[0-1])\.))/.test(savedLan)) $("lanHost").value=savedLan;
+  else $("lanHost").value="";
+}catch(e){$("lanHost").value=""}
+$("create").onclick=function(){online(code4(),"hotspot","create")};
+$("onlineCreate").onclick = function () {
+  online(code4(), "online", "create");
+};
+
+$("onlineJoin").onclick = function () {
+  var c = $("onlineCode").value.trim().toUpperCase();
+
+  if (c.length !== 4) {
+    $("err").textContent = "Enter the 4-letter room code.";
+    return;
+  }
+
+  online(c, "online", "join");
+};
+$("join").onclick=function(){var c=$("code").value.trim().toUpperCase();if(c.length!==4){$("err").textContent="Enter the 4-letter code.";return}online(c,"hotspot","join")};
+try{$("soloName").value=localStorage.getItem("vu-name")||""}catch(e){}
+$("soloStart").onclick=function(){
+  var n=($("soloName").value||"").trim().slice(0,14)||"Player";
+  if(n.toLowerCase()===AMMA_NAME.toLowerCase())n="Player";
+  AMMA_LVL=parseInt($("ammaLvl").value,10)||0;
+  try{localStorage.setItem("vu-name",n)}catch(e){}
+  R=null;local=[{name:n,s:{},isBot:false},{name:AMMA_NAME,s:{},isBot:true,ammamma:true}];
+  $("mode").textContent="Single player · "+n+" vs Ammamma 👵";
+  $("share").textContent="Ammamma’s skill: "+AMMA_LV[AMMA_LVL]+" · one device";
+  $("err").textContent="";show("hub");renderLB();
+};
+$("local").onclick=function(){
+  var n=$("locals").value.split(",").map(function(x){return x.trim()}).filter(Boolean);
+  var bots=parseInt($("botCount").value,10)||0;
+  n=n.slice(0,8-bots);
+  if(n.length<1){$("err").textContent="Enter at least one human player name.";return}
+  var used={};n=n.map(function(x){return x.slice(0,18)}).filter(function(x){var k=x.toLowerCase();if(used[k])return false;used[k]=true;return true});
+  if(!n.length){$("err").textContent="Please enter a valid human player name.";return}
+  if(n.length+bots>8){$("err").textContent="Maximum 8 players total, including bots.";return}
+  R=null;local=n.map(function(x){return{name:x,s:{},isBot:false}});
+  for(var bi=1;bi<=bots;bi++)local.push({name:"Village Bot "+bi,s:{},isBot:true});
+  $("mode").textContent="Pass & play · "+local.length+" players ("+n.length+" human, "+bots+" bot)";
+  $("share").textContent="One device · Bots play automatically in quick score games";
+  $("err").textContent="";show("hub");renderLB();
+};
+$("leave").onclick=function(){if(R&&R.leave)try{R.leave()}catch(e){}R=null;local=null;["solo","hotspot","online","local"].forEach(function(m){$("mode-"+m).classList.add("hide")});show("home")};
+
+function total(s){return Object.keys(s||{}).reduce(function(a,k){return a+(s[k]||0)},0)}
+function renderLB(){
+  var rows=R?R.peers().map(function(p){return{n:p.presence.name||"Player",s:p.presence.s||{},you:p.isMe}}):(local||[]).map(function(p){return{n:p.name,s:p.s}});
+  rows.sort(function(a,b){return total(b.s)-total(a.s)});
+  $("lb").innerHTML=rows.map(function(r,i){
+    return '<div class="lb"><span>'+(["🥇","🥈","🥉"][i]||(i+1)+".")+" "+esc(r.n)+(r.you?" (you)":"")+'<br><small>'+Object.keys(ICON).map(function(g){return ICON[g]+" "+(r.s[g]||0)}).join(" · ")+'</small></span><b>'+total(r.s)+'</b></div>'}).join("")||'<p class="s">Waiting for players…</p>';
+}
+function save(p,g,score){p.s[g]=Math.max(p.s[g]||0,score);if(R)R.presence({name:me.name,s:me.s}).catch(function(){});renderLB()}
+
+function stopAll(){cleanups.forEach(function(f){try{f()}catch(e){}});cleanups=[]}
+function after(ms,f){var t=setTimeout(f,ms);cleanups.push(function(){clearTimeout(t)});return t}
+function every(ms,f){var t=setInterval(f,ms);cleanups.push(function(){clearInterval(t)});return t}
+$("quit").onclick=function(){stopAll();show("hub")};
+
+document.querySelectorAll(".game").forEach(function(b){b.onclick=function(){
+  var g=b.dataset.g;
+  if(g==="ramasita"&&isSolo()){toast("🕵️ Rama–Sita Chits needs 4–8 family players. Try Pass & Play!");return}
+  if(g==="ashta")return ashta();if(g==="panchabhuta")return ashta(true);if(g==="carrom")return carrom();if(g==="sos")return sosGame();
+  if(g==="memory"||g==="ramasita"){
+    var mp=R?R.peers().map(function(x){return x.presence.name||"Player"}).slice(0,8):(local||[]).filter(function(x){return !x.isBot||x.ammamma}).map(function(x){return x.name}).slice(0,8);
+    if(mp.length<2)mp=[mp[0]||"Player 1","Player 2"];
+    stopAll();show("play");
+    if(g==="ramasita"){$("who").textContent="🕵️ Rama–Sita Chits · pass & play";ramaSitaChitsGame(mp);return;}
+    $("who").textContent="🧠 Memory Match · pass & play";
+    memoryGame(function(score,msg){stopAll();$("stage").innerHTML='<div class="c"><p class="big">🏆 '+esc(msg)+'</p><p class="big" style="color:var(--acc)">Winning score: '+score+'</p><button class="gold full" id="memBack">Back to games</button></div>';$('memBack').onclick=function(){show("hub")}},mp,false);return;
+  }
+  if(R)return turn(me,g,function(){});
+  var i=0;(function next(){
+    if(i>=local.length){show("hub");return}
+    var p=local[i++];
+    if(p.isBot){
+      var ic=p.ammamma?"👵":"🤖";
+      $("who").textContent=ic+" "+p.name;show("play");
+      $("stage").innerHTML='<div class="c"><p class="big">'+ic+' '+esc(p.name)+' is '+(p.ammamma?'playing carefully…':'thinking…')+'</p><p class="s">'+(p.ammamma?'Ammamma takes her turn':'Computer player turn')+'</p></div>';
+      after(p.ammamma?1400:900,function(){var score=p.ammamma?ammaScore(g):Math.floor(18+Math.random()*73);save(p,g,score);sfx("home");
+        var vd="";if(p.ammamma){var mine=lastScore;vd=mine>score?'<p class="big">🏆 You beat Ammamma!</p><p class="s">You '+mine+' · Ammamma '+score+'</p>':mine<score?'<p class="big">👵 Ammamma wins this round</p><p class="s">Ammamma '+score+' · You '+mine+'</p>':'<p class="big">🤝 It’s a tie!</p><p class="s">Both scored '+score+'</p>';if(mine>score)confetti();ammaSay(mine>score?"lose":mine<score?"win":"nice")}
+        $("stage").innerHTML='<div class="c"><p class="big">'+ic+' '+esc(p.name)+' scored!</p><p class="big" style="color:var(--acc)">+'+score+' points</p>'+vd+'<button class="gold full" id="botNext">Continue</button></div>';$('botNext').onclick=next;});
+      return;
+    }
+    $("who").textContent="";show("play");
+    $("stage").innerHTML='<div class="c"><p class="big">Pass the device to<br>'+esc(p.name)+'</p><button class="gold full" id="rdy">I’m ready!</button></div>';
+    $("rdy").onclick=function(){turn(p,g,next)};
+  })();
+}});
+function turn(p,g,next){
+  stopAll();show("play");$("who").textContent=ICON[g]+" "+p.name;
+  GAMES[g](function(score,msg){
+    stopAll();lastScore=score;save(p,g,score);sfx("home");if(score>=60)confetti();
+    $("stage").innerHTML='<div class="c"><p class="big">'+esc(msg)+'</p><p class="big" style="color:var(--acc)">+'+score+' points</p><button class="gold full" id="nx">Continue</button></div>';
+    $("nx").onclick=function(){if(R)show("hub");else next()};
+  });
+}
+
+/* Deepavali &amp; Ramayana Trivia */
+var Q=[
+["Who was the father of Lord Rama?",["Janaka","Dasharatha","Sugriva","Vashishtha"],1],
+["Which kingdom did Ravana rule?",["Kishkindha","Ayodhya","Lanka","Mithila"],2],
+["Who leapt across the ocean to find Sita?",["Angada","Jambavan","Nala","Hanuman"],3],
+["Who found baby Sita in a furrow of the field?",["King Janaka","King Dasharatha","Sage Valmiki","Bharata"],0],
+["Which brother ruled Ayodhya with Rama’s sandals on the throne?",["Lakshmana","Shatrughna","Bharata","Vibhishana"],2],
+["Which noble bird fought Ravana to save Sita?",["Garuda","Jatayu","Sampati","Hamsa"],1],
+["Who was Ravana’s brother who joined Rama’s side?",["Kumbhakarna","Indrajit","Khara","Vibhishana"],3],
+["Which sage composed the Ramayana?",["Valmiki","Vyasa","Narada","Agastya"],0],
+["Which goddess of wealth is worshipped on Deepavali?",["Saraswati","Lakshmi","Parvati","Annapurna"],1],
+["Which demon was defeated on Naraka Chaturdashi?",["Kamsa","Ravana","Narakasura","Hiranyakashipu"],2]];
+function trivia(done){
+  var i=0,score=0,order=Q.slice();
+  (function ask(){
+    if(i>=order.length)return done(score,"Ramayana scholar! "+Math.round(score/10)+" points of wisdom.");
+    var q=order[i],left=12,ans=false;
+    $("stage").innerHTML='<p class="s">Question '+(i+1)+' of '+order.length+'</p><div class="bar"><i id="tb"></i></div><p class="big">'+esc(q[0])+'</p>'+q[1].map(function(o,k){return'<button class="opt" data-k="'+k+'">'+esc(o)+'</button>'}).join("");
+    var t0=Date.now(),iv=every(100,function(){left=12-(Date.now()-t0)/1000;$("tb").style.width=Math.max(0,left/12*100)+"%";if(left<=0){clearInterval(iv);pick(-1)}});
+    function pick(k){
+      if(ans)return;ans=true;clearInterval(iv);
+      var bs=$("stage").querySelectorAll(".opt");
+      bs.forEach(function(b,j){b.disabled=true;if(j===q[2])b.classList.add("ok");else if(j===k)b.classList.add("no")});
+      if(k===q[2]){score+=10+Math.floor(Math.max(0,left)/3);sfx("ok");burst("✨",8);if(left>9)toast("⚡ Lightning fast!")}else{sfx("no");shake()}
+      i++;after(900,ask);
+    }
+    $("stage").querySelectorAll(".opt").forEach(function(b){b.onclick=function(){pick(+b.dataset.k)}});
+  })();
+}
+
+/* Narakasura Vadha Archery */
+function dahan(done){
+  var order=[0,1,2,3,4,5,6,7,8,9].sort(function(){return Math.random()-.5}),r=0,hits=0,active=-1,hitNow=false;
+  var h="";for(var i=0;i<10;i++)h+='<button class="head" data-i="'+i+'">👹</button>';
+  $("stage").innerHTML='<p class="s c">Tap each head the moment it glows. Defeat all 10 for a perfect victory! 🔥</p><div class="heads">'+h+'</div><p class="c big" id="dm">Get ready…</p>';
+  var hs=$("stage").querySelectorAll(".head");
+  hs.forEach(function(b){b.onclick=function(){
+    if(+b.dataset.i===active&&!hitNow){hitNow=true;hits++;sfx("hit");floatTxt(b,"💥 -10 HP");burst("🔥",6);b.textContent="🔥";b.classList.remove("on");b.classList.add("dead");$("dm").textContent="🏹 Hit! "+hits+" of 10"}
+  }});
+  function next(){
+    if(r>=10&&hits===10){confetti();toast("🪔 Narakasura Vadha! Happy Deepavali! 🪔")}if(r>=10)return done(hits*10+(hits===10?20:0),hits===10?"Narakasura Vadha complete! Happy Deepavali! 🪔":hits+" heads burned. Aim again!");
+    active=order[r];hitNow=false;hs[active].classList.add("on");
+    var win=1200-r*70;
+    after(win,function(){if(!hitNow){sfx("miss");floatTxt(hs[active],"💨 Missed!")}hs[active].classList.remove("on");active=-1;r++;after(450,next)});
+  }
+  after(1200,next);
+}
+
+/* Golden Diya Catch */
+function deer(done){
+  var score=0,left=20;
+  $("stage").innerHTML='<div class="row c big"><span id="ds">Caught: 0</span><span id="dt">20s</span></div><div class="pad" id="pad"></div>';
+  var pad=$("pad"),d=document.createElement("button");d.className="deer";d.textContent="🪔";pad.appendChild(d);
+  function move(){d.style.left=Math.random()*(pad.clientWidth-50)+"px";d.style.top=Math.random()*(pad.clientHeight-50)+"px"}
+  move();var mv=every(800,move);
+  d.onclick=function(){score++;sfx("tap");burst("✨",4);if(score%5===0)toast("🪔 "+score+" caught!");$("ds").textContent="Caught: "+score;move();clearInterval(mv);mv=every(Math.max(450,800-score*25),move)};
+  every(1000,function(){left--;$("dt").textContent=left+"s";if(left<=0)done(score*10,"You caught the golden diya "+score+" times!")});
+}
+/* Music, sound effects and fun moments */
+var AU=null,muted=false,mg,sg,step=0,nextT=0,mtimer=null,mi=2,fxSeq=-1;
+try{muted=localStorage.getItem("vu-mute")==="1"}catch(e){}
+$("snd").textContent=muted?"🔇":"🔊";
+function audio(){
+  if(!AU){var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;
+    AU=new C();mg=AU.createGain();mg.gain.value=muted?0:.24;mg.connect(AU.destination);
+    sg=AU.createGain();sg.gain.value=muted?0:.5;sg.connect(AU.destination)}
+  if(AU.state==="suspended")AU.resume();return AU;
+}
+function tone(f,t,d,type,vol,dest){var o=AU.createOscillator(),g=AU.createGain();o.type=type;o.frequency.value=f;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(vol,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(dest);o.start(t);o.stop(t+d+.05)}
+function drum(t,low){var o=AU.createOscillator(),g=AU.createGain();o.frequency.setValueAtTime(low?140:260,t);o.frequency.exponentialRampToValueAtTime(low?60:150,t+.12);g.gain.setValueAtTime(low?.9:.5,t);g.gain.exponentialRampToValueAtTime(.001,t+.18);o.connect(g);g.connect(mg);o.start(t);o.stop(t+.2)}
+var SC=[261.6,293.7,329.6,392,440,523.3,587.3,659.3];
+var omN=null,bellT=0,bellList=[523.3,659.3,784,880,1046.5];
+function bell(t,f,vol){[1,2.76,5.4,8.93].forEach(function(r,i){tone(f*r,t,3.6/(i+1)+.6,"sine",vol/(i+1.4),mg)})}
+var nb=null,dropT=0,fireT=0,earthT=0,cricT=0,pluckT=0,fluteT=0,pIdx=0;
+function noiseBuf(){if(!nb){nb=AU.createBuffer(1,AU.sampleRate*2,AU.sampleRate);var d=nb.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1}return nb}
+function noiseLoop(type,fr,q,gain){var s=AU.createBufferSource();s.buffer=noiseBuf();s.loop=true;var f=AU.createBiquadFilter();f.type=type;f.frequency.value=fr;f.Q.value=q;var g=AU.createGain();g.gain.value=gain;s.connect(f);f.connect(g);g.connect(mg);s.start();return g}
+function lfo(target,rate,amt){var o=AU.createOscillator(),g=AU.createGain();o.frequency.value=rate;g.gain.value=amt;o.connect(g);g.connect(target);o.start()}
+function elemStart(t){
+  lfo(noiseLoop("bandpass",500,.8,.07).gain,.09,.04);        /* Vayu: wind */
+  lfo(noiseLoop("bandpass",2400,1.4,.03).gain,.25,.01);      /* Jala: stream murmur */
+  noiseLoop("lowpass",160,.5,.03);                           /* Agni: low fire rumble */
+  [880,1318.5].forEach(function(fr,i){var o=AU.createOscillator(),g=AU.createGain();o.type="sine";o.frequency.value=fr;g.gain.value=.012;o.connect(g);g.connect(mg);o.start();lfo(g.gain,.15+i*.07,.008)}); /* Akasha: shimmer */
+  dropT=t+1;fireT=t+2;earthT=t+3;cricT=t+8;pluckT=t+.5;fluteT=t+7;
+}
+function elemSched(t){
+  if(t>=dropT){var o=AU.createOscillator(),g=AU.createGain(),f=480+Math.random()*500;o.frequency.setValueAtTime(f,t);o.frequency.exponentialRampToValueAtTime(f*1.9,t+.08);g.gain.setValueAtTime(.16,t);g.gain.exponentialRampToValueAtTime(.001,t+.16);o.connect(g);g.connect(mg);o.start(t);o.stop(t+.15);dropT=t+.7+Math.random()*2}
+  if(t>=fireT){var s=AU.createBufferSource(),hf=AU.createBiquadFilter(),g2=AU.createGain();s.buffer=noiseBuf();hf.type="highpass";hf.frequency.value=2600;g2.gain.setValueAtTime(.1+Math.random()*.08,t);g2.gain.exponentialRampToValueAtTime(.001,t+.04);s.connect(hf);hf.connect(g2);g2.connect(mg);s.start(t,Math.random()*1.5,.05);fireT=t+.5+Math.random()*1.8}
+  if(t>=earthT){var o2=AU.createOscillator(),g3=AU.createGain();o2.frequency.setValueAtTime(75,t);o2.frequency.exponentialRampToValueAtTime(42,t+.45);g3.gain.setValueAtTime(.26,t);g3.gain.exponentialRampToValueAtTime(.001,t+.8);o2.connect(g3);g3.connect(mg);o2.start(t);o2.stop(t+.6);earthT=t+5.5}
+  if(t>=cricT){for(var i=0;i<4;i++)tone(4300,t+i*.085,.05,"sine",.035,mg);cricT=t+10+Math.random()*10}
+  if(t>=pluckT){var pf=[196,261.6,261.6,130.8][pIdx%4];pIdx++;tone(pf,t,3.8,"sine",.32,mg);tone(pf*2,t,2.6,"sine",.11,mg);tone(pf*3,t,1.8,"sine",.05,mg);pluckT=t+1.2}
+  if(t>=fluteT){var fs=[523.3,587.3,659.3,784,880,1046.5],ff=fs[Math.floor(Math.random()*fs.length)];tone(ff,t,3.6,"sine",.15,mg);tone(ff*2,t,2.2,"sine",.025,mg);fluteT=t+5+Math.random()*5}
+}
+function omStart(){
+  if(omN||!AU)return;var t=AU.currentTime;
+  var g=AU.createGain();g.gain.value=.0001;g.connect(mg);g.gain.linearRampToValueAtTime(.4,t+5);
+  var f=AU.createBiquadFilter();f.type="bandpass";f.Q.value=2.5;f.frequency.value=800;f.connect(g);
+  [[130.8,"sawtooth",.35],[131.5,"sawtooth",.3],[65.4,"sawtooth",.35],[261.6,"sawtooth",.12],[196,"sine",.22]].forEach(function(v){
+    var o=AU.createOscillator(),og=AU.createGain();o.type=v[1];o.frequency.value=v[0];og.gain.value=v[2];o.connect(og);og.connect(f);o.start()});
+  omN={f:f,g:g,next:t};bellT=t+3;elemStart(t);
+}
+function sched(){
+  if(!AU||AU.state!=="running"||!omN)return;var t=AU.currentTime;
+  if(t>=omN.next-.2){var s=Math.max(t,omN.next);
+    omN.f.frequency.setValueAtTime(800,s);omN.f.frequency.linearRampToValueAtTime(800,s+3.5);
+    omN.f.frequency.linearRampToValueAtTime(340,s+7);omN.f.frequency.linearRampToValueAtTime(220,s+10.5);
+    omN.f.frequency.linearRampToValueAtTime(220,s+12.5);omN.f.frequency.linearRampToValueAtTime(800,s+15.5);
+    omN.g.gain.setValueAtTime(.4,s);omN.g.gain.linearRampToValueAtTime(.3,s+10.5);omN.g.gain.linearRampToValueAtTime(.4,s+15.5);
+    omN.next=s+15.5}
+  if(t>=bellT){var n=1,f=bellList[Math.floor(Math.random()*bellList.length)];
+    for(var i=0;i<n;i++)bell(t+.1+i*.55,f,.26);
+    bellT=t+9+Math.random()*7}
+  elemSched(t);
+}
+function music(){if(!audio()||mtimer)return;omStart();mtimer=setInterval(sched,100)}
+function seq(fr,gap,type){var t=AU.currentTime;fr.forEach(function(f,i){tone(f,t+i*gap,.3,type||"sine",.45,sg)})}
+function sfx(n){
+  if(muted||!audio())return;var t=AU.currentTime;
+  if(n==="ok")seq([523,784],.1);
+  else if(n==="no")tone(180,t,.3,"sawtooth",.3,sg);
+  else if(n==="hit")seq([880,440],.05,"square");
+  else if(n==="miss")tone(150,t,.2,"triangle",.4,sg);
+  else if(n==="tap")tone(660,t,.08,"sine",.4,sg);
+  else if(n==="throw")seq([300,380,460,540],.06,"square");
+  else if(n==="cap"){tone(200,t,.4,"sawtooth",.35,sg);tone(100,t+.1,.4,"sawtooth",.35,sg)}
+  else if(n==="power")seq([392,523,659,784,1047],.07);
+  else if(n==="turn")seq([660,880],.09,"triangle");
+  else if(n==="home")seq([523,659,784],.1,"triangle");
+  else if(n==="win")seq([523,659,784,1047,784,1047,1319],.14,"triangle");
+}
+function burst(em,n){for(var i=0;i<n;i++){var s=document.createElement("span");s.className="pf";s.textContent=em;s.style.setProperty("--dx",(Math.random()*2-1)*170+"px");s.style.setProperty("--dy",-(Math.random()*240+30)+"px");document.body.appendChild(s);setTimeout(function(x){x.remove()},1300,s)}}
+function toast(t,low){var d=document.createElement("div");d.className="toast";if(low)d.style.top="calc(env(safe-area-inset-top,0px) + 112px)";d.textContent=t;document.body.appendChild(d);setTimeout(function(){d.remove()},1700)}
+function shake(){var m=document.querySelector("main");m.classList.remove("shake");void m.offsetWidth;m.classList.add("shake");setTimeout(function(){m.classList.remove("shake")},420)}
+function confetti(){["🎉","🪔","✨","🌺","🎊"].forEach(function(e){burst(e,8)});sfx("win")}
+function popup(html,ms,cls){var c=$("pops");if(!c){c=document.createElement("div");c.id="pops";document.body.appendChild(c)}var d=document.createElement("div");d.className="pop "+(cls||"");d.innerHTML=html;c.appendChild(d);var rm=function(){d.remove()};d.onclick=rm;setTimeout(rm,ms||1800)}
+function floatTxt(el,t){var r=el.getBoundingClientRect(),d=document.createElement("span");d.className="ft";d.textContent=t;d.style.left=(r.left+r.width/2)+"px";d.style.top=r.top+"px";document.body.appendChild(d);setTimeout(function(){d.remove()},1000)}
+function gavaluPop(){
+  if(!AC||!AC.cw)return;
+  var sh=AC.cw.map(function(u,i){return'<span class="gs '+(u?'up':'dn')+' roll" style="animation-delay:'+(i*.1)+'s"></span>'}).join("");
+  popup('<b>'+esc(nm(AC.turn))+' throws the gavalu! 🐚</b><div>'+sh+'</div><div>'+AC.ups+' up → move <b>'+AC.roll+'</b></div>',2600,"");
+}
+function capPop(){var ci=AC&&AC.capInfo;if(!ci){toast("⚔️ Captured!");return}
+  popup('<div class="nk"><span class="sb">👸🏹</span><span class="ar2"></span><span class="nks">👹</span><span class="bm">💥</span></div><b>Satyabhama kills Narakasura!</b><br>'+esc(nm(ci.by))+(ci.durga?' (Durga’s power)':'')+' sent '+ci.vic.map(function(v){return esc(nm(v))}).join(" &amp; ")+'’s coin back to start',2800,"dmg")}
+function playFx(f){
+  if(f==="throw"){sfx("throw");gavaluPop()}
+  else if(f==="four"){sfx("throw");gavaluPop();toast("🌺 Perfect four! Extra throw")}
+  else if(f==="cap"){sfx("cap");shake();burst("⚔️",8);toast("⚔️ Captured!")}
+  else if(f==="home"){sfx("home");burst("🛕",8);toast("🛕 A piece reached home!")}
+  else if(f==="power"){sfx("power");burst("🌺",10);toast("🌺 Ammavaru’s blessing!")}
+  else if(f==="win")confetti();
+  else sfx("tap");
+}
+$("snd").onclick=function(){
+  muted=!muted;try{localStorage.setItem("vu-mute",muted?"1":"0")}catch(e){}
+  $("snd").textContent=muted?"🔇":"🔊";
+  if(audio()){mg.gain.value=muted?0:.24;sg.gain.value=muted?0:.5}
+  if(!muted)music();
+};
+document.addEventListener("pointerdown",function(){if(!muted)music()});
+document.addEventListener("visibilitychange",function(){if(AU){if(document.hidden)AU.suspend();else if(!muted)AU.resume()}});
+
+/* Ashta Chamma with Ammavari powers (2-8 players) */
+var OUT=[[4,2],[4,1],[4,0],[3,0],[2,0],[1,0],[0,0],[0,1],[0,2],[0,3],[0,4],[1,4],[2,4],[3,4],[4,4],[4,3]];
+var INA=[[3,3],[3,2],[3,1],[2,1],[1,1],[1,2],[1,3],[2,3]];
+var SAFE5={"4,2":1,"0,2":1,"2,0":1,"2,4":1,"2,2":1},SAFE7={"6,3":1,"0,3":1,"3,0":1,"3,6":1,"3,3":1,"5,3":1,"1,3":1,"3,1":1,"3,5":1},SAFE=SAFE5,NN=5,HM=24,EN=16;
+var EL5={"4,0":"prithvi","0,0":"jala","0,4":"agni","4,4":"vayu","3,1":"prithvi","1,1":"akasha","1,3":"agni","3,3":"vayu"},EL7={"6,0":"prithvi","0,0":"jala","0,6":"agni","6,6":"vayu","5,1":"akasha","1,1":"jala","1,5":"prithvi","5,5":"agni","4,2":"vayu","2,2":"akasha","2,4":"agni","4,4":"jala"},EL=EL5,wantPB=false;
+var ELS={prithvi:"🌍",jala:"💧",agni:"🔥",vayu:"🌬️",akasha:"🌌"},ELN={prithvi:"Prithvi (Earth)",jala:"Jala (Water)",agni:"Agni (Fire)",vayu:"Vayu (Air)",akasha:"Akasha (Space)"};
+var SP7=[],ARW7={};
+(function(){function a(r,c){SP7.push([r,c])}var i;
+  for(i=3;i>=0;i--)a(6,i);for(i=5;i>=0;i--)a(i,0);for(i=1;i<=6;i++)a(0,i);for(i=1;i<=6;i++)a(i,6);a(6,5);a(6,4);
+  a(5,4);for(i=3;i>=1;i--)a(5,i);for(i=4;i>=1;i--)a(i,1);for(i=2;i<=5;i++)a(1,i);for(i=2;i<=4;i++)a(i,5);
+  a(4,4);a(4,3);a(4,2);a(3,2);a(2,2);a(2,3);a(2,4);a(3,4)})();
+function sz(){var s=AC&&AC.size===7;NN=s?7:5;HM=s?47:24;EN=s?24:16;SAFE=s?SAFE7:SAFE5;EL=s?EL7:EL5}
+var COL=[["#ffb74d","#e65100","#2e7d32","Orange"],["#81c784","#2e7d32","#ef6c00","Green"],["#b0605a","#6d1b1b","#f57c00","Maroon"],["#fff176","#f9a825","#6d1b1b","Yellow"],["#64b5f6","#1565c0","#ffd54f","Blue"],["#ba68c8","#6a1b9a","#ffee58","Purple"],["#4dd0e1","#00838f","#ff5252","Teal"],["#f48fb1","#d81b60","#fff59d","Pink"]];
+var SEAT=[0,2,1,3];
+var AC=null,lastTK=-1,scored=-1,ovr=null,hopDone=-1,ARW={};
+(function(){function d(a,b){var dy=b[0]-a[0],dx=b[1]-a[1];return dx>0?"→":dx<0?"←":dy>0?"↓":"↑"}
+  OUT.forEach(function(c,i){ARW[c.join()]=d(c,OUT[(i+1)%16])});
+  INA.forEach(function(c,i){ARW[c.join()]=d(c,i<7?INA[i+1]:[2,2])});SP7.forEach(function(c,i){ARW7[c.join()]=d(c,i<46?SP7[i+1]:[3,3])})})();
+function noop(){}
+function coin(p,sh){var c=COL[p%8];return'<span class="wc'+(sh?' sh':'')+'" style="--l:'+c[0]+';--b:'+c[1]+';--k:'+c[2]+'"><i></i></span>'}
+function shells(rl){if(!AC.cw)return"";return'<div class="cws c">'+AC.cw.map(function(u,i){return'<span class="gs sm '+(u?'up':'dn')+(rl?' roll':'')+'" style="animation-delay:'+(i*.08)+'s"></span>'}).join("")+'</div>'}
+function hop(h){var s=h.from;ovr={p:h.p,i:h.i,pos:s};
+  var iv=setInterval(function(){s++;sfx("tap");if(s>=h.to){clearInterval(iv);ovr=null}else ovr.pos=s;draw()},190);
+  cleanups.push(function(){clearInterval(iv);ovr=null})}
+function fresh(seq,dir,n){
+  var pc=[],kill=[],pw=[],sh=[];
+  for(var i=0;i<n;i++){pc.push([0,0,0,0]);kill.push(0);pw.push({k:1,d:1,a:1});sh.push(-1)}
+  return{n:n,size:5,pb:wantPB,dir:dir||"ccw",pc:pc,turn:0,roll:null,ups:null,cw:null,ph:"throw",pend:null,kill:kill,pw:pw,sh:sh,force:false,msg:"Cowries ready. Let the game begin!",win:null,seq:seq||0,fx:null,hop:null,tk:(seq||0)+1,ids:null,names:null,mode:R?"o":"l"};
+}
+function cellOf(p,pos){sz();var c=cellBase(p,pos);return AC&&AC.dir==="ccw"?[c[0],NN-1-c[1]]:c}
+function cellBase(p,pos){if(pos>=HM)return[(NN-1)/2,(NN-1)/2];var q=SEAT[p%4];if(NN===7){var c=SP7[pos].slice();for(var i=0;i<q;i++)c=[c[1],6-c[0]];return c}if(pos<16)return OUT[(pos+4*q)%16];return INA[(pos-16+2*q)%8]}
+function acPeers(){return R.peers().slice().sort(function(a,b){return a.peer<b.peer?-1:1})}
+function myId(){var m=R.peers().filter(function(x){return x.isMe})[0];return m?m.peer:null}
+function nm(p){return AC.names&&AC.names[p]||COL[p%8][3]}
+function role(){if(!R)return AC.turn;if(!AC.ids)return -1;return AC.ids.indexOf(myId())}
+function present(p){return R.peers().some(function(x){return x.peer===AC.ids[p]})}
+function isWon(){return AC.win!==null&&AC.win!==undefined}
+function unstarted(){return !AC.cw&&AC.pc.every(function(a){return a.every(function(x){return x===0})})}
+function arwAt(key){sz();var A=NN===7?ARW7:ARW;if(AC.dir!=="ccw")return A[key]||"";var m=key.split(","),a=A[m[0]+","+(NN-1-m[1])]||"";return a==="→"?"←":a==="←"?"→":a}
+function dirUI(){if(!AC.n||!unstarted()||isWon()||role()<0)return"";var cc=AC.dir==="ccw";return'<p class="s c" style="margin:0 0 4px">Choose one direction for both coins and turns (anti-clockwise is the default) before the first throw:</p><div class="pw" style="margin-bottom:8px"><button class="'+(cc?"g":"gold")+'" data-a="dcw">↻ Clockwise</button><button class="'+(cc?"gold":"g")+'" data-a="dccw">↺ Anti-clockwise</button></div>'+sizeUI()}
+function sizeUI(){return'<p class="s c" style="margin:0 0 4px">Board size:</p><div class="pw" style="margin-bottom:8px"><button class="'+(AC.size===7?"g":"gold")+'" data-a="s5">5×5 Classic</button><button class="'+(AC.size===7?"gold":"g")+'" data-a="s7">7×7 Big</button></div>'}
+function okMove(p,i,r){sz();var pos=AC.pc[p][i],t=pos+r;return pos<HM&&t<=HM&&!(t>=EN&&!AC.kill[p])}
+function order(n){var a=[];for(var i=0;i<n;i++)a.push(i);function k(p){return SEAT[p%4]}return a.sort(function(x,y){return k(x)-k(y)||x-y})}
+function endTurn(){var od=order(AC.n);AC.turn=od[(od.indexOf(AC.turn)+1)%od.length];AC.sh[AC.turn]=-1;AC.tk=AC.seq+1;AC.ph="throw";AC.roll=null}
+function commit(){AC.seq++;if(R)R.emit("ac",AC).catch(noop);draw()}
+function throwIt(){
+  var p=AC.turn,u=0,cw=[];for(var i=0;i<4;i++){var up=Math.random()<.5;cw.push(up);if(up)u++}AC.cw=cw;
+  var r=u===0?8:u;if(AC.force){r=4;u=4;AC.force=false;AC.cw=[true,true,true,true]}
+  AC.roll=r;AC.ups=u;var ex=r===4||r===8;AC.fx=r===4?"four":"throw";
+  var any=[0,1,2,3].some(function(i){return okMove(p,i,r)});
+  if(any){AC.ph="move";AC.msg=nm(p)+" threw "+r+(ex?" (extra throw after this move)":"")+". Tap a glowing coin."}
+  else{AC.msg=nm(p)+" threw "+r+" but can’t move."+(ex?" Extra throw!":"");if(ex)AC.ph="throw";else endTurn()}
+  commit();
+}
+function capAt(p,c,vic){
+  if(SAFE[c.join()])return false;var cap=false;
+  for(var o=0;o<AC.n;o++){if(o===p)continue;for(var j=0;j<4;j++){var q=AC.pc[o][j];if(q<HM){var d=cellOf(o,q);if(d[0]===c[0]&&d[1]===c[1]&&AC.sh[o]!==j){AC.pc[o][j]=0;cap=true;if(vic.indexOf(o)<0)vic.push(o)}}}}
+  return cap;
+}
+function elPop(){
+  var e=AC.elInfo;if(!e)return;
+  var T={prithvi:"Coin is grounded: shielded until your next turn",jala:"Flowed one step forward",agni:"Burned rival coins on the neighbouring squares",vayu:"Extra throw!",akasha:"A used Ammavari power is restored"};
+  sfx("power");popup('<div style="font-size:2rem">'+ELS[e.el]+'</div><b>'+ELN[e.el]+'!</b><br>'+esc(nm(e.by))+': '+T[e.el],2000,"");
+}
+function movePiece(i){sz();
+  var p=AC.turn,r=AC.roll,t=AC.pc[p][i]+r,cap=false,vic=[],el=null,ex0=false;
+  AC.hop={p:p,i:i,from:t-r,to:t,s:AC.seq+1};AC.pc[p][i]=t;var c=cellOf(p,t);
+  cap=capAt(p,c,vic);
+  if(AC.pb&&t<HM&&EL[c.join()]){el=EL[c.join()];
+    if(el==="prithvi")AC.sh[p]=i;
+    else if(el==="jala"){var t2=t+1;if(t2<=HM&&!(t2>=EN&&!(AC.kill[p]||cap))){t=t2;AC.pc[p][i]=t;AC.hop.to=t;c=cellOf(p,t);if(capAt(p,c,vic))cap=true}}
+    else if(el==="agni"){[[1,0],[-1,0],[0,1],[0,-1]].forEach(function(d){var nc=[c[0]+d[0],c[1]+d[1]];if(nc[0]>=0&&nc[1]>=0&&nc[0]<NN&&nc[1]<NN&&capAt(p,nc,vic))cap=true})}
+    else if(el==="vayu")ex0=true;
+    else if(el==="akasha"){["k","d","a"].some(function(k){if(!AC.pw[p][k]){AC.pw[p][k]=1;return true}return false})}
+  }
+  if(cap)AC.kill[p]=1;
+  if(AC.pc[p].every(function(x){return x===HM}))AC.win=p;
+  var ex=cap||t===HM||r===4||r===8||ex0;
+  AC.msg=nm(p)+" moved"+(el?" onto "+ELS[el]+" "+ELN[el]:"")+(cap?" and captured a rival! ⚔️":t===HM?" a coin home! 🛕":".")+(ex&&!isWon()?" Extra throw!":"");
+  AC.elInfo=el?{el:el,by:p}:null;
+  AC.capInfo=cap?{by:p,vic:vic}:null;AC.fx=isWon()?"win":cap?"cap":t===HM?"home":"move";AC.roll=null;
+  if(!isWon()){if(ex)AC.ph="throw";else endTurn()}
+  commit();
+}
+function doAct(a){
+  if(ovr)return;
+  if(a==="start"){if(!R||AC.n)return;var ps=acPeers().slice(0,8);if(ps.length<2)return;
+    var o=AC;AC=fresh(o.seq+1,o.dir,ps.length);AC.size=o.size;AC.pb=o.pb;AC.ids=ps.map(function(x){return x.peer});AC.names=ps.map(function(x){return x.presence.name||"Player"});
+    AC.msg=AC.names[0]+" begins! Pick a direction, then throw.";AC.fx="tap";commit();return}
+  if(a==="lobby"){if(!R)return;var o2=AC;AC=fresh(o2.seq+1,o2.dir,0);AC.size=o2.size;AC.pb=o2.pb;commit();return}
+  if(a==="new"){var o3=AC;AC=fresh(o3.seq+1,o3.dir,o3.n);AC.size=o3.size;AC.pb=o3.pb;AC.ids=o3.ids;AC.names=o3.names;AC.mode=o3.mode;commit();return}
+  if(a==="skip"){if(R&&AC.n&&role()>=0&&!isWon()&&!present(AC.turn)){var nmx=nm(AC.turn);endTurn();AC.msg=nmx+" is away. Turn skipped.";commit()}return}
+  if(a==="s5"||a==="s7"){if(!AC.n||role()<0||!unstarted())return;AC.size=a==="s7"?7:5;AC.msg=(AC.size===7?"7×7 big":"5×5 classic")+" board chosen. Throw the cowries!";AC.fx="tap";commit();return}
+  if(a==="dcw"||a==="dccw"){if(!AC.n||role()<0||!unstarted())return;AC.dir=a==="dccw"?"ccw":"cw";AC.msg=(AC.dir==="ccw"?"Anti-clockwise":"Clockwise")+" play chosen. Throw the cowries!";AC.fx="tap";commit();return}
+  var p=AC.turn;if(role()!==p||isWon())return;
+  if(!ammaGo&&isAmma(nm(p)))return;
+  if(a==="throw"&&AC.ph==="throw")return throwIt();
+  if(a==="x"&&AC.ph==="target"){AC.ph="throw";AC.pend=null;return draw()}
+  if(AC.ph!=="throw"||!AC.pw[p][a])return;
+  if(a==="k"){AC.ph="target";AC.pend="k";AC.msg="Tap one of your coins to wrap it in Kavach."}
+  if(a==="d"){AC.ph="target";AC.pend="d";AC.msg="Tap a rival coin (not on a safe 🏠) to send it home."}
+  if(a==="a"){AC.pw[p].a=0;AC.force=true;AC.fx="power";AC.msg="Ammavaru blesses you: your next throw is a perfect 4!"}
+  commit();
+}
+function cellTap(r,c){sz();
+  if(ovr)return;var p=AC.turn;if(!AC.n||role()!==p||isWon())return;
+  if(!ammaGo&&isAmma(nm(p)))return;
+  function at(pl,f){for(var i=0;i<4;i++){var q=AC.pc[pl][i];if(q<HM){var d=cellOf(pl,q);if(d[0]===r&&d[1]===c&&f(i))return i}}return -1}
+  if(AC.ph==="move"){var i=at(p,function(i){return okMove(p,i,AC.roll)});if(i>=0)movePiece(i)}
+  else if(AC.ph==="target"&&AC.pend==="k"){var k=at(p,function(){return true});if(k>=0){AC.sh[p]=k;AC.pw[p].k=0;AC.ph="throw";AC.pend=null;AC.fx="power";AC.msg=nm(p)+" is protected by Kavach until their next turn. 🔱";commit()}}
+  else if(AC.ph==="target"&&AC.pend==="d"&&!SAFE[r+","+c]){
+    for(var o=0;o<AC.n;o++){if(o===p)continue;
+      var j=at(o,function(j){return AC.sh[o]!==j});
+      if(j>=0){AC.pc[o][j]=0;AC.kill[p]=1;AC.pw[p].d=0;AC.ph="throw";AC.pend=null;AC.capInfo={by:p,vic:[o],durga:1};AC.fx="cap";AC.msg="Durga strikes! A rival coin returns to start. 🔥";commit();return}}}
+}
+function home(p){sz();return AC.pc[p].filter(function(x){return x===HM}).length}
+var TL=20,deadline=0,timerSeq=-1,firedSeq=-1,lastBeep=-1;
+function autoPlay(){
+  var p=AC.turn;toast("⏰ Time’s up! Auto-played for "+nm(p),1);sfx("no");
+  if(AC.ph==="target"){AC.ph="throw";AC.pend=null}
+  if(AC.ph==="throw")return throwIt();
+  if(AC.ph==="move"){var best=-1;for(var i=0;i<4;i++)if(okMove(p,i,AC.roll)&&(best<0||AC.pc[p][i]>AC.pc[p][best]))best=i;if(best>=0)movePiece(best)}
+}
+function tmUpdate(){
+  var el=$("tm");if(!el)return;
+  if(!AC||!AC.n||isWon()||unstarted()){el.style.display="none";timerSeq=-1;return}
+  if(AC.seq!==timerSeq){timerSeq=AC.seq;deadline=Date.now()+TL*1000;lastBeep=-1}
+  var left=Math.max(0,Math.ceil((deadline-Date.now())/1000));
+  el.style.display="block";el.classList.toggle("low",left<=5);
+  el.innerHTML="⏳ "+esc(nm(AC.turn))+" · "+left+"s<i style=\"width:"+(left/TL*100)+"%\"></i>";
+  if(left<=5&&left>0&&lastBeep!==left){lastBeep=left;sfx("tap")}
+  if(left<=0&&firedSeq!==AC.seq&&!ovr&&role()===AC.turn){firedSeq=AC.seq;autoPlay()}
+}
+function announce(p){
+  var yours=R&&role()===p;
+  popup('<div style="font-size:2rem">'+coin(p)+'</div><b>'+esc(nm(p))+'’s turn</b>'+(yours?'<br>🪔 That’s you!':''),1500,"");sfx("turn");
+  if(yours&&navigator.vibrate){try{navigator.vibrate(200)}catch(e){}}
+  if(!muted&&window.speechSynthesis){try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(nm(p)+(yours?", it’s your turn":", your turn"));u.rate=.95;speechSynthesis.speak(u)}catch(e){}}
+}
+function lobby(){
+  var ps=acPeers(),h='<p class="big c">Gather the family (2–8 players)</p><div>'+ps.slice(0,8).map(function(x,i){return'<div class="lb" style="justify-content:center;gap:10px"><span>'+coin(i)+' '+esc(x.presence.name||"Player")+(x.isMe?" (you)":"")+'</span></div>'}).join("")+'</div>';
+  if(ps.length>8)h+='<p class="s c">Players beyond 8 will watch.</p>';
+  h+=ps.length>=2?'<button class="gold full" data-a="start" style="margin-top:10px">Start with '+Math.min(ps.length,8)+' players</button>':'<p class="s c">Share your room code and wait for at least one more player.</p>';
+  $("stage").innerHTML=h;
+}
+function draw(){sz();
+  if(!AC)return;
+  var rolling=false;
+  if(AC.fx&&AC.seq!==fxSeq){fxSeq=AC.seq;playFx(AC.fx);if(AC.elInfo)elPop();rolling=AC.fx==="throw"||AC.fx==="four"}
+  if(AC.hop&&AC.hop.s===AC.seq&&hopDone!==AC.seq){hopDone=AC.seq;hop(AC.hop)}
+  if(!AC.n)return lobby();
+  if(AC.tk!==lastTK&&!isWon()){lastTK=AC.tk;announce(AC.turn)}
+  var p=AC.turn,r=role(),w=isWon(),mine=r===p&&!w&&!isAmma(nm(p)),map={},hl={},n=AC.n;
+  for(var pl=0;pl<n;pl++)for(var i=0;i<4;i++){
+    var q=AC.pc[pl][i];if(ovr&&ovr.p===pl&&ovr.i===i)q=ovr.pos;if(q>=HM)continue;
+    var k=cellOf(pl,q).join();(map[k]=map[k]||[]).push([pl,i]);
+    if(mine){
+      if(AC.ph==="move"&&pl===p&&okMove(p,i,AC.roll))hl[k]=1;
+      if(AC.ph==="target"&&AC.pend==="k"&&pl===p)hl[k]=1;
+      if(AC.ph==="target"&&AC.pend==="d"&&pl!==p&&!SAFE[k]&&AC.sh[pl]!==i)hl[k]=1}}
+  var b="";for(var y=0;y<NN;y++)for(var x=0;x<NN;x++){var key=y+","+x,t=(map[key]||[]).map(function(e){return coin(e[0],AC.sh[e[0]]===e[1])}).join("");
+    b+='<button class="cl'+((map[key]||[]).length>4?' many':'')+(SAFE[key]?' sf':'')+(hl[key]?' hl':'')+'" data-r="'+y+'" data-c="'+x+'">'+(t||(key===((NN-1)/2+","+(NN-1)/2)?"🛕":(SAFE[key]?"🏠":"")+(AC.pb&&EL[key]?'<span class="el">'+ELS[EL[key]]+'</span>':'')+'<span class="ar">'+arwAt(key)+'</span>'))+'</button>'}
+  var ctl="";
+  if(w)ctl='<p class="big c">🏆 '+esc(nm(AC.win))+' wins! Jai Ammavaru!</p><button class="gold full" data-a="new">Play again (same players)</button>'+(R?'<button class="g full" data-a="lobby">Change players</button>':'');
+  else if(mine&&AC.ph==="throw"){var pw=AC.pw[p];ctl='<button class="full" data-a="throw">🐚 Throw the cowries</button><div class="pw">'+(pw.k?'<button class="g" data-a="k">🔱 Kavach</button>':'')+(pw.d?'<button class="g" data-a="d">🔥 Durga</button>':'')+(pw.a?'<button class="g" data-a="a">🌺 Aashirvad</button>':'')+'</div>'}
+  else if(mine&&AC.ph==="target")ctl='<button class="g full" data-a="x">Cancel power</button>';
+  else ctl='<p class="s c">'+(r>=0?"Waiting for "+esc(nm(p))+"…":"You’re watching this match.")+'</p>';
+  if(!w&&R&&r>=0&&r!==p&&!present(p))ctl+='<button class="g full" data-a="skip">'+esc(nm(p))+' left: skip turn</button>';
+  var score='<div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:center;margin-bottom:6px">'+order(AC.n).map(function(i){return'<span style="white-space:nowrap;'+(i===p&&!w?'font-weight:800;color:var(--acc)':'')+'">'+(i===p&&!w?'▶ ':'')+coin(i)+esc(nm(i))+' '+home(i)+'/4</span>'}).join("")+'</div>';
+  $("stage").innerHTML=score+'<p class="big c">'+coin(p)+' '+esc(nm(p))+'’s turn</p>'+
+    shells(false)+(AC.roll?'<p class="c">🐚 '+AC.ups+' up → move <b>'+AC.roll+'</b></p>':'')+'<p class="s c">'+esc(AC.msg)+'</p><p class="s c" style="margin:0">'+(AC.dir==="ccw"?"↺ Coins travel anti-clockwise":"↻ Coins travel clockwise")+' (follow the arrows)</p><div class="vil">🌴🛖🌾🌳🛖🌾🐄<span class="mv">🐓</span></div><div class="abw"><div class="ab'+(NN===7?" n7":"")+'" style="grid-template-columns:repeat('+NN+',1fr)">'+b+'</div></div>'+dirUI()+ctl+
+    '<p class="s" style="margin-top:10px">2–8 players share the four edge start squares, taking turns in the same direction the coins travel (↻ clockwise: bottom → left → top → right, ↺ anti-clockwise: bottom → right → top → left). 🏠 safe houses (the middle of every side) protect coins from capture. Capture once before entering the inner ring. 4, 8, a capture or reaching home earns an extra throw.<br><b>Ammavari powers (once each):</b> 🔱 Kavach shields a coin until your next turn · 🔥 Durga sends any rival coin to start · 🌺 Aashirvad makes your next throw a perfect 4.'+(AC.pb?'<br><b>Panchabhuta squares:</b> 🌍 Prithvi grounds your coin (Kavach) · 💧 Jala flows it one step on · 🔥 Agni burns rival coins on neighbouring squares · 🌬️ Vayu gives an extra throw · 🌌 Akasha restores a used power.':'')+'</p>';
+  if(w&&scored!==AC.seq){scored=AC.seq;
+    if(R){if(r>=0)save(me,"ashta",r===AC.win?50:5*home(r))}
+    else for(var j=0;j<n;j++)save(local[j],"ashta",j===AC.win?50:5*home(j))}
+}
+function ammaCellHas(c,pl){for(var j=0;j<4;j++){var q=AC.pc[pl][j];if(q<HM){var d=cellOf(pl,q);if(d[0]===c[0]&&d[1]===c[1])return j}}return -1}
+function ammaPick(p){
+  var r=AC.roll,opts=[];
+  for(var i=0;i<4;i++)if(okMove(p,i,r)){
+    var from=AC.pc[p][i],t=from+r,c=cellOf(p,t),k=c.join(),sc=t*0.6;
+    if(t===HM)sc+=100;
+    var cap=false;
+    if(t<HM&&!SAFE[k])for(var o=0;o<AC.n;o++){if(o===p)continue;var j=ammaCellHas(c,o);if(j>=0&&AC.sh[o]!==j){cap=true;break}}
+    if(cap)sc+=(AC.kill[p]?60:90);
+    if(t<HM&&SAFE[k])sc+=22;
+    if(from<HM&&SAFE[cellOf(p,from).join()]&&!(t<HM&&SAFE[k]))sc-=8;
+    if(AC.pb&&t<HM&&EL[k])sc+=10;
+    opts.push({i:i,sc:sc+Math.random()*3});
+  }
+  if(!opts.length)return -1;
+  if(Math.random()<[.5,.2,0][AMMA_LVL])return opts[Math.floor(Math.random()*opts.length)].i;
+  opts.sort(function(a,b){return b.sc-a.sc});return opts[0].i;
+}
+function ammaAshta(){
+  if(R||!AC||!AC.n||isWon()||ovr||!isAmma(nm(AC.turn)))return;
+  var p=AC.turn;ammaGo=true;
+  try{
+    if(AC.ph==="throw"){
+      var pw=AC.pw[p];
+      if(AMMA_LVL>0&&pw.a&&Math.random()<.25){doAct("a");return}
+      if(AMMA_LVL>0&&pw.d&&Math.random()<.2){
+        var has=false;for(var o=0;o<AC.n&&!has;o++){if(o===p)continue;for(var j=0;j<4;j++){var q=AC.pc[o][j];if(q>0&&q<HM&&AC.sh[o]!==j&&!SAFE[cellOf(o,q).join()]){has=true;break}}}
+        if(has){doAct("d");return}
+      }
+      throwIt();
+    }else if(AC.ph==="move"){var m=ammaPick(p);if(m>=0)movePiece(m);else{endTurn();commit()}}
+    else if(AC.ph==="target"){
+      if(AC.pend==="d"){var bestC=null,bq=-1;
+        for(var o2=0;o2<AC.n;o2++){if(o2===p)continue;for(var j2=0;j2<4;j2++){var q2=AC.pc[o2][j2];if(q2<HM&&AC.sh[o2]!==j2){var cc=cellOf(o2,q2);if(!SAFE[cc.join()]&&q2>bq){bq=q2;bestC=cc}}}}
+        if(bestC)cellTap(bestC[0],bestC[1]);else{AC.ph="throw";AC.pend=null;draw()}
+      }else{AC.ph="throw";AC.pend=null;draw()}
+    }
+  }finally{ammaGo=false}
+}
+function ashta(pb){
+  stopAll();show("play");wantPB=!!pb;var prevSeq=AC?AC.seq+1:0;if(AC&&!!AC.pb!==wantPB)AC=null;
+  $("who").textContent=wantPB?"🌍 Panchabhuta Chamma · five elements":"🐚 Ashta Chamma · Village mud ground";
+  var st=$("stage"),mode=R?"o":"l";
+  if(!R){var humans=(local||[]).filter(function(x){return !x.isBot||x.ammamma});var key=humans.map(function(x){return x.name}).join("|");
+    if(!AC||AC.mode!=="l"||(AC.names||[]).join("|")!==key){AC=fresh(AC?AC.seq+1:0,AC?AC.dir:"ccw",Math.min(8,humans.length));AC.names=humans.slice(0,8).map(function(x){return x.name});AC.mode="l";AC.msg=AC.names[0]+" begins! Pick a direction, then throw."}}
+  else if(!AC||AC.mode!=="o"){AC=fresh(AC?AC.seq+1:0,"ccw",0);AC.mode="o"}
+  if(AC.seq<prevSeq)AC.seq=prevSeq;
+  fxSeq=AC.seq;hopDone=AC.seq;ovr=null;lastTK=-1;
+  st.onclick=function(e){var a=e.target.closest("[data-a]"),c=e.target.closest("[data-r]");if(a)doAct(a.dataset.a);else if(c)cellTap(+c.dataset.r,+c.dataset.c)};
+  cleanups.push(function(){st.onclick=null});
+  var tmEl=document.createElement("div");tmEl.id="tm";tmEl.className="tm";tmEl.style.display="none";document.body.appendChild(tmEl);
+  cleanups.push(function(){tmEl.remove()});timerSeq=-1;every(250,tmUpdate);
+  every(1100,ammaAshta);
+  if(R){
+    cleanups.push(R.onPeers(draw));
+    cleanups.push(R.on("ac",function(m){if(!m.isMe&&m.data&&m.data.seq>AC.seq){AC=m.data;draw()}}));
+    cleanups.push(R.on("acq",function(m){if(!m.isMe&&AC.seq>0)R.emit("ac",AC).catch(noop)}));
+    R.emit("acq",{}).catch(noop);
+  }
+  draw();
+}
+var DEEP=new Date(2026,10,8,0,0,0);
+function cdTick(){
+  var el=$("cd"),ms=DEEP-new Date();
+  if(ms<=0){el.innerHTML='<b>🪔 Happy Deepavali! 🪔</b>';return}
+  var d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5),m=Math.floor(ms%36e5/6e4),s=Math.floor(ms%6e4/1e3);
+  el.innerHTML='<div class="s" style="margin:0">🪔 Countdown to Deepavali · 8 Nov 2026</div><div class="cdn">'+[[d,"days"],[h,"hrs"],[m,"min"],[s,"sec"]].map(function(x){return'<span><b>'+x[0]+'</b><small>'+x[1]+'</small></span>'}).join("")+'</div>';
+}
+cdTick();setInterval(cdTick,1000);
+/* Village Carrom (2 players, village rules) */
+var CR=null,crSt=null,crRun=false,crRemote=false,crPot=[],crSIn=false,crAim=null,crFlip=false,crLastTK=-1,crScored=-1,crAlive=false,crFrames=0;
+var CS=400,CM=14,CPR=21,crFx=[],crTick=0,STRK=["#fff6cf","#ffe08a","#c98a00"];
+var CPK=[[CM+3,CM+3],[CS-CM-3,CM+3],[CM+3,CS-CM-3],[CS-CM-3,CS-CM-3]];
+function crNewCoins(){
+  var a=[{x:200,y:200,vx:0,vy:0,c:2,r:11,in:false}],k;
+  for(k=0;k<6;k++)a.push({x:200+22*Math.cos(k*Math.PI/3),y:200+22*Math.sin(k*Math.PI/3),vx:0,vy:0,c:k%2,r:11,in:false});
+  for(k=0;k<12;k++)a.push({x:200+44*Math.cos(k*Math.PI/6),y:200+44*Math.sin(k*Math.PI/6),vx:0,vy:0,c:k%2,r:11,in:false});
+  return a;
+}
+function crFresh(seq,names,ids){return{coins:crNewCoins(),turn:0,sx:200,q:0,qo:0,due:[0,0],msg:"White (home side) begins. Slide the striker, then drag back and release.",win:null,seq:seq||0,names:names||null,ids:ids||null,mode:R?"o":"l",tk:(seq||0)+1}}
+function crName(p){return CR.names&&CR.names[p]||(p?"Black":"White")}
+function crRole(){if(!R)return CR.turn;if(!CR.ids)return -1;return CR.ids.indexOf(myId())}
+function crBaseY(p){return p===0?330:70}
+function crLeft(c){return CR.coins.filter(function(k){return k.c===c&&!k.in}).length}
+function crFree(x,y,r){return CR.coins.every(function(k){return k.in||Math.hypot(k.x-x,k.y-y)>=k.r+r-1})}
+function crRet(c){
+  c.in=false;c.vx=c.vy=0;var cand=[[200,200]],i;
+  for(i=0;i<8;i++)cand.push([200+26*Math.cos(i*Math.PI/4),200+26*Math.sin(i*Math.PI/4)]);
+  for(i=0;i<12;i++)cand.push([200+52*Math.cos(i*Math.PI/6),200+52*Math.sin(i*Math.PI/6)]);
+  for(i=0;i<cand.length;i++){if(crFree(cand[i][0],cand[i][1],c.r)){c.x=cand[i][0];c.y=cand[i][1];return}}
+  c.x=200;c.y=200;
+}
+function crBodies(){var a=CR.coins.filter(function(k){return !k.in});if(crSt)a.push(crSt);return a}
+function crStep(){
+  var pb=crPot.length;crTick=0;
+  for(var s=0;s<3;s++){
+    var all=crBodies(),i,j,b;
+    for(i=0;i<all.length;i++){b=all[i];b.x+=b.vx/3;b.y+=b.vy/3}
+    for(i=0;i<all.length;i++){b=all[i];
+      for(j=0;j<4;j++){if(Math.hypot(b.x-CPK[j][0],b.y-CPK[j][1])<CPR-5){
+        crFx.push({k:"p",x0:b.x,y0:b.y,x1:CPK[j][0],y1:CPK[j][1],t:0,r:b.r,col:b===crSt?STRK:crColor(b.c)});b.vx=b.vy=0;if(b===crSt){crSIn=true;crSt=null}else{b.in=true;crPot.push(b)}break}}}
+    all=crBodies();
+    for(i=0;i<all.length;i++){b=all[i];var lo=CM+b.r,hi=CS-CM-b.r;
+      if(b.x<lo){b.x=lo;b.vx=-b.vx*.8}if(b.x>hi){b.x=hi;b.vx=-b.vx*.8}
+      if(b.y<lo){b.y=lo;b.vy=-b.vy*.8}if(b.y>hi){b.y=hi;b.vy=-b.vy*.8}}
+    for(i=0;i<all.length;i++)for(j=i+1;j<all.length;j++){
+      var p=all[i],q=all[j],dx=q.x-p.x,dy=q.y-p.y,d=Math.hypot(dx,dy),md=p.r+q.r;
+      if(d<md&&d>.001){var nx=dx/d,ny=dy/d,mi=p.m||1,mj=q.m||1,ov=md-d;
+        p.x-=nx*ov*mj/(mi+mj);p.y-=ny*ov*mj/(mi+mj);q.x+=nx*ov*mi/(mi+mj);q.y+=ny*ov*mi/(mi+mj);
+        var vn=(q.vx-p.vx)*nx+(q.vy-p.vy)*ny;
+        if(vn<0){if(-vn>2.2&&crFx.length<24){crFx.push({k:"s",x:(p.x+q.x)/2,y:(p.y+q.y)/2,t:0});if(-vn>5&&!crTick){crTick=1;sfx("tap")}}var imp=-1.85*vn/(1/mi+1/mj);p.vx-=imp/mi*nx;p.vy-=imp/mi*ny;q.vx+=imp/mj*nx;q.vy+=imp/mj*ny}}}
+    for(i=0;i<all.length;i++){b=all[i];b.rot=(b.rot||0)+Math.hypot(b.vx,b.vy)/3/b.r*.8;b.vx*=.993;b.vy*=.993;if(Math.abs(b.vx)+Math.abs(b.vy)<.05){b.vx=0;b.vy=0}}
+  }
+  if(crPot.length>pb)sfx("hit");
+}
+function crSettled(){return crBodies().every(function(b){return b.vx===0&&b.vy===0})}
+function crLoop(){
+  if(!crRun||!crAlive)return;
+  crStep();crFrames++;crFx=crFx.filter(function(f){f.t+=.07;return f.t<1});crDraw();
+  if((crSettled()||crFrames>1200)&&!crFx.length){crRun=false;crSt=null;if(!crRemote)crFinish();else{crDraw();crUI()}return}
+  requestAnimationFrame(crLoop);
+}
+function crSnap(){return CR.coins.map(function(k){return{x:k.x,y:k.y,vx:0,vy:0,c:k.c,r:k.r,in:k.in}})}
+function crStart(sx,vx,vy,remote,coins,turn){
+  if(coins)CR.coins=coins;if(turn!==undefined)CR.turn=turn;
+  CR.sx=sx;crSt={x:sx,y:crBaseY(CR.turn),vx:vx,vy:vy,r:14,m:1.5};crPot=[];crSIn=false;crRun=true;crRemote=!!remote;crFrames=0;crFx=[];
+  sfx("throw");requestAnimationFrame(crLoop);crUI();
+}
+function crShoot(vx,vy){
+  if(!crFree(CR.sx,crBaseY(CR.turn),14)){CR.msg="Striker touches a coin. Slide it to a clear spot.";crUI();return}
+  var snap=crSnap();
+  if(R)R.emit("crshot",{sx:CR.sx,vx:vx,vy:vy,coins:snap,turn:CR.turn,seq:CR.seq}).catch(noop);
+  crStart(CR.sx,vx,vy,false);
+}
+function crFinish(){
+  var p=CR.turn,o=1-p,sIn=crSIn,pot=crPot.slice(),msgs=[],ownCnt=0,cov=false;
+  var pend=CR.q===1&&CR.qo===p;
+  pot.forEach(function(c){
+    if(c.c===2){CR.q=1;CR.qo=p;msgs.push("Queen pocketed! Cover it.")}
+    else if(c.c===p){if(CR.due[p]>0){CR.due[p]--;crRet(c);msgs.push("Due coin returned to board")}else ownCnt++}
+    else msgs.push(crName(o)+" gets a coin")});
+  if(!sIn&&ownCnt>0&&CR.q===1&&CR.qo===p){CR.q=2;cov=true;msgs.push("Queen covered! 👑")}
+  if(!sIn&&crLeft(p)===0&&CR.q!==2){
+    var lastOwn=pot.filter(function(c){return c.c===p&&c.in}).pop();
+    if(lastOwn){crRet(lastOwn);ownCnt--;msgs.push("Cover the queen first: last coin returned")}}
+  var next=p,keep;
+  if(sIn){
+    msgs.push("FOUL: striker pocketed!");
+    if(CR.q===1&&CR.qo===p){var qn=CR.coins.filter(function(c){return c.c===2})[0];crRet(qn);CR.q=0}
+    var mine=CR.coins.filter(function(c){return c.c===p&&c.in});
+    if(mine.length){crRet(mine[mine.length-1]);msgs.push("One of your coins goes back")}else{CR.due[p]++;msgs.push("You owe one coin (due)")}
+    next=o;
+  }else if(CR.q===1&&CR.qo===p&&!cov){msgs.push("Take another shot to cover the queen.");next=p}
+  else if(pend&&!cov){var q2=CR.coins.filter(function(c){return c.c===2})[0];crRet(q2);CR.q=0;msgs.push("Queen not covered: back to centre");next=o}
+  else if(ownCnt>0){msgs.push("Own coin: shoot again");next=p}
+  else next=o;
+  if(!msgs.length)msgs.push("No coin pocketed.");
+  if(crLeft(0)===0)CR.win=0;else if(crLeft(1)===0)CR.win=1;
+  if(CR.win!==null){msgs.push(crName(CR.win)+" clears the board!");CR.fx="win"}
+  else CR.fx=sIn?"foul":pot.length?"pot":null;
+  if(next!==CR.turn)CR.tk=CR.seq+1;
+  CR.turn=next;CR.sx=200;CR.msg=crName(p)+": "+msgs.join(" · ");CR.seq++;
+  if(R)R.emit("crend",CR).catch(noop);
+  crUI();crDraw();
+}
+function crColor(c){return c===2?["#ff7a6e","#d62828","#7a0d0d"]:c===0?["#ffffff","#f3e8cf","#b9a77a"]:["#76645b","#3a2a22","#150d0a"]}
+function crDraw(){
+  var cv=$("crc");if(!cv||!CR||!CR.coins)return;var x=cv.getContext("2d"),sg=crFlip?-1:1;
+  x.setTransform(1,0,0,1,0,0);x.clearRect(0,0,CS,CS);
+  if(crFlip){x.translate(CS,CS);x.rotate(Math.PI)}
+  x.fillStyle="#f2b92c";x.fillRect(0,0,CS,CS);
+  x.fillStyle="#ebc98a";x.fillRect(CM,CM,CS-2*CM,CS-2*CM);
+  x.strokeStyle="#8a4b22";x.lineWidth=1.6;
+  [70,330].forEach(function(y){x.strokeRect(70,y-12,260,24);[70,330].forEach(function(cx){x.beginPath();x.arc(cx,y,12,0,7);x.fillStyle="#d96b3a";x.fill();x.stroke()})});
+  x.beginPath();x.arc(200,200,52,0,7);x.stroke();x.beginPath();x.arc(200,200,14,0,7);x.fillStyle="#d96b3a";x.fill();x.stroke();
+  x.beginPath();x.moveTo(CM+30,CM+30);x.lineTo(CM+60,CM+60);x.moveTo(CS-CM-30,CM+30);x.lineTo(CS-CM-60,CM+60);x.moveTo(CM+30,CS-CM-30);x.lineTo(CM+60,CS-CM-60);x.moveTo(CS-CM-30,CS-CM-30);x.lineTo(CS-CM-60,CS-CM-60);x.stroke();
+  CPK.forEach(function(p){var g=x.createRadialGradient(p[0],p[1],2,p[0],p[1],CPR);g.addColorStop(0,"#0d0702");g.addColorStop(1,"#4a2e16");x.beginPath();x.arc(p[0],p[1],CPR,0,7);x.fillStyle=g;x.fill();x.lineWidth=3;x.strokeStyle="#f2b92c";x.stroke();x.lineWidth=1.6});
+  function coin3(b,col,scale){
+    var sp=Math.hypot(b.vx||0,b.vy||0),lift=Math.min(sp/8,1)*3,r=b.r*(scale||1);
+    x.beginPath();x.ellipse(b.x+sg*(2.5+lift*1.3),b.y+sg*(3.5+lift*1.7),r,r*.95,0,0,7);x.fillStyle="rgba(40,20,5,"+(.4-lift*.04)+")";x.fill();
+    x.beginPath();x.arc(b.x,b.y+sg*(3.5-lift*.8),r,0,7);x.fillStyle=col[2];x.fill();
+    var cx=b.x,cy=b.y-sg*lift*1.4;
+    var g=x.createRadialGradient(cx-sg*r*.35,cy-sg*r*.4,r*.1,cx,cy,r);g.addColorStop(0,col[0]);g.addColorStop(.6,col[1]);g.addColorStop(1,col[2]);
+    x.beginPath();x.arc(cx,cy,r,0,7);x.fillStyle=g;x.fill();x.lineWidth=1.6;x.strokeStyle="#c9a24a";x.stroke();
+    x.beginPath();x.arc(cx,cy,r*.58,0,7);x.lineWidth=1;x.stroke();
+    var a=b.rot||0;x.beginPath();x.arc(cx,cy,r*.8,a,a+.9);x.strokeStyle="rgba(255,255,255,.7)";x.lineWidth=2;x.stroke();
+  }
+  var idle=!crRun&&CR.names&&CR.win===null,list=CR.coins.filter(function(k){return !k.in});
+  if(idle){var sx=CR.sx,sy=crBaseY(CR.turn);list.push({x:sx,y:sy,r:14,vx:0,vy:0,c:9})}
+  else if(crSt)list.push(crSt);
+  list.sort(function(p,q){return sg*(p.y-q.y)});
+  list.forEach(function(k){coin3(k,k.c===9||k===crSt?STRK:crColor(k.c))});
+  if(idle&&crAim){var ax=CR.sx,ay=crBaseY(CR.turn),dx=crAim.sx-crAim.cx,dy=crAim.sy-crAim.cy,d=Math.hypot(dx,dy),l=Math.min(d,100);
+    if(d>2){var ux=dx/d,uy=dy/d;x.setLineDash([6,5]);x.strokeStyle="#b71c1c";x.lineWidth=2.5;x.beginPath();x.moveTo(ax,ay);x.lineTo(ax+ux*(30+l*2.2),ay+uy*(30+l*2.2));x.stroke();x.setLineDash([]);
+      x.fillStyle="#b71c1c";x.fillRect(ax-30,ay+24*sg-(sg<0?5:0),60*l/100,5)}}
+  crFx.forEach(function(f){
+    if(f.k==="p"){var t=f.t,px=f.x0+(f.x1-f.x0)*t,py=f.y0+(f.y1-f.y0)*t;x.globalAlpha=1-t*.85;coin3({x:px,y:py,r:f.r,vx:0,vy:0,rot:t*6},f.col,1-.6*t);x.globalAlpha=1}
+    else{x.globalAlpha=1-f.t;x.beginPath();x.arc(f.x,f.y,5+f.t*18,0,7);x.strokeStyle="#fff3b0";x.lineWidth=2;x.stroke();x.globalAlpha=1}});
+}
+function crBotTurn(){return !R&&!!CR&&!!CR.names&&CR.win===null&&isAmma(crName(CR.turn))}
+function crCanAct(){return CR&&CR.names&&!crRun&&CR.win===null&&crRole()===CR.turn&&!crBotTurn()}
+var crBusy=false;
+function crDistSeg(px,py,x1,y1,x2,y2){var dx=x2-x1,dy=y2-y1,l2=dx*dx+dy*dy,u=l2?((px-x1)*dx+(py-y1)*dy)/l2:0;u=Math.max(0,Math.min(1,u));return Math.hypot(px-(x1+u*dx),py-(y1+u*dy))}
+function crBotKick(){
+  if(crBusy||crRun||!crBotTurn())return;crBusy=true;
+  after(1200,function(){crBusy=false;if(crRun||!crBotTurn())return;crBotShoot()});
+}
+function crBotShoot(){
+  var p=CR.turn,y0=crBaseY(p),coins=CR.coins.filter(function(c){return !c.in}),sxs=[],sx,best=null;
+  var pend=CR.q===1&&CR.qo===p;
+  var targets=coins.filter(function(c){return c.c===p||(!pend&&c.c===2&&CR.q===0)});
+  if(!targets.length)targets=coins.filter(function(c){return c.c===p});
+  for(sx=82;sx<=318;sx+=8)if(crFree(sx,y0,14))sxs.push(sx);
+  if(!sxs.length){CR.sx=200;crShoot(0,p?5:-5);return}
+  sxs.forEach(function(s){
+    targets.forEach(function(t){CPK.forEach(function(pk){
+      var dx=pk[0]-t.x,dy=pk[1]-t.y,dl=Math.hypot(dx,dy);if(dl<1)return;
+      var ux=dx/dl,uy=dy/dl,gx=t.x-ux*(t.r+14),gy=t.y-uy*(t.r+14),ax=gx-s,ay=gy-y0,al=Math.hypot(ax,ay);
+      if(al<5||(p?ay:-ay)<=2)return;
+      var cos=(ax*ux+ay*uy)/al;if(cos<.5)return;
+      if(gx<CM+14||gx>CS-CM-14||gy<CM+14||gy>CS-CM-14)return;
+      var blocked=coins.some(function(o){return o!==t&&(crDistSeg(o.x,o.y,s,y0,gx,gy)<o.r+14-1||crDistSeg(o.x,o.y,t.x,t.y,pk[0],pk[1])<o.r+t.r-2)});
+      if(blocked)return;
+      var val=cos*100-al*.05-dl*.05+(t.c===2?12:0);
+      if(!best||val>best.val)best={val:val,sx:s,ax:ax,ay:ay,al:al,dl:dl};
+    })});
+  });
+  var ang,v;
+  if(best&&Math.random()<[.3,.1,0][AMMA_LVL])best=null;
+  if(!best){
+    var t2=targets[Math.floor(Math.random()*targets.length)]||coins[0],s2=sxs[Math.floor(Math.random()*sxs.length)];
+    best={sx:s2,ax:t2.x-s2,ay:t2.y-y0};best.al=Math.hypot(best.ax,best.ay);best.dl=60;
+  }
+  ang=Math.atan2(best.ay,best.ax)+(Math.random()-.5)*[.3,.12,.03][AMMA_LVL];
+  v=Math.max(7,Math.min(21,(0.0208*(best.al+best.dl*1.15)+2.6)*1.08));
+  CR.sx=best.sx;crShoot(Math.cos(ang)*v,Math.sin(ang)*v);
+}
+function crPt(e){var cv=$("crc"),r=cv.getBoundingClientRect(),x=(e.clientX-r.left)/r.width*CS,y=(e.clientY-r.top)/r.height*CS;return crFlip?{x:CS-x,y:CS-y}:{x:x,y:y}}
+function crUI(){
+  if(!CR)return;var st=$("stage");
+  if(!CR.names){
+    var ps=acPeers(),h='<p class="big c">Village Carrom: gather 2 players</p>'+ps.slice(0,2).map(function(x,i){return'<div class="lb" style="justify-content:center"><span>'+(i?"⚫":"⚪")+" "+esc(x.presence.name||"Player")+(x.isMe?" (you)":"")+'</span></div>'}).join("");
+    h+=ps.length>=2?'<button class="gold full" id="crgo" style="margin-top:10px">Start match</button>':'<p class="s c">Share the room code. Two players needed.</p>';
+    st.innerHTML=h;var b=$("crgo");if(b)b.onclick=function(){var q=acPeers().slice(0,2);CR=crFresh(CR.seq+1,q.map(function(x){return x.presence.name||"Player"}),q.map(function(x){return x.peer}));CR.mode="o";CR.fx=null;CR.seq++;R.emit("crend",CR).catch(noop);crUI()};
+    return;
+  }
+  if(!$("crc")){
+    st.innerHTML='<div id="crs" class="c" style="margin-bottom:6px"></div><div class="crw"><canvas id="crc" width="400" height="400" style="width:100%;display:block;touch-action:none"></canvas></div>'+
+      '<p class="s c" id="crm" style="margin:8px 0"></p><div id="crsl" class="c"><small class="s">Slide the striker along your baseline</small><input type="range" id="crr" min="82" max="318" value="200"></div>'+
+      '<button class="gold full hide" id="crnew">Play again</button>'+
+      '<details class="s"><summary><b>Village rules</b></summary><p>⚪ White plays from the bottom, ⚫ Black from the top. Slide the striker on your baseline, drag back and release to shoot.<br>• Pocket your own coin: shoot again. Pocket an opponent’s coin: it counts for them and your turn ends.<br>• 👑 Queen: pocket it, then you must cover it by pocketing one of your own coins on the very next shot, or it returns to the centre.<br>• Foul (striker pocketed): turn lost, and one of your pocketed coins goes back to the centre. If you have none, you owe one (due) that returns when you next pocket a coin.<br>• You can’t pocket your last coin before the queen is covered.<br>• First to clear all 9 of their coins wins.</p></details>';
+    var cv=$("crc");
+    cv.onpointerdown=function(e){if(!crCanAct())return;var p=crPt(e);crAim={sx:p.x,sy:p.y,cx:p.x,cy:p.y};try{cv.setPointerCapture(e.pointerId)}catch(z){}};
+    cv.onpointermove=function(e){if(!crAim)return;var p=crPt(e);crAim.cx=p.x;crAim.cy=p.y;crDraw()};
+    cv.onpointerup=function(){if(!crAim)return;var dx=crAim.sx-crAim.cx,dy=crAim.sy-crAim.cy,l=Math.hypot(dx,dy);crAim=null;
+      if(l>10&&crCanAct()){var pw=Math.min(l,100)/100*21;crShoot(dx/l*pw,dy/l*pw)}else crDraw()};
+    $("crr").oninput=function(){if(crCanAct()){CR.sx=+this.value;crDraw()}};
+    $("crnew").onclick=function(){var o=CR;CR=crFresh(o.seq+1,o.names,o.ids);CR.mode=o.mode;CR.tk=CR.seq+1;CR.seq++;if(R)R.emit("crend",CR).catch(noop);crUI()};
+  }
+  var r=crRole();crFlip=R?r===1:(CR.turn===1&&!isSolo());
+  var qtxt=CR.q===0?"👑 on board":CR.q===1?"👑 pending cover":"👑 covered by "+esc(crName(CR.qo));
+  $("crs").innerHTML='<span style="'+(CR.turn===0&&CR.win===null?'font-weight:800;color:var(--acc)':'')+'">⚪ '+esc(crName(0))+' · '+crLeft(0)+' left</span> &nbsp; <span style="'+(CR.turn===1&&CR.win===null?'font-weight:800;color:var(--acc)':'')+'">⚫ '+esc(crName(1))+' · '+crLeft(1)+' left</span><br><small class="s">'+qtxt+(CR.due[0]||CR.due[1]?' · due: '+CR.due[0]+'/'+CR.due[1]:'')+'</small>';
+  $("crm").textContent=CR.win!==null?"🏆 "+crName(CR.win)+" wins! Jai Ammavaru!":(crRun?"Coins are moving…":CR.msg);
+  $("crr").value=CR.sx;$("crr").disabled=!crCanAct();$("crsl").style.display=CR.win===null?"":"none";
+  $("crnew").classList.toggle("hide",CR.win===null);
+  if(CR.tk!==crLastTK&&CR.win===null&&!crRun){crLastTK=CR.tk;crAnnounce()}
+  if(CR.fx&&CR.fx!=="done"&&CR.seq!==crLastFx&&!crRun){crLastFx=CR.seq;if(CR.fx==="foul"){sfx("no");shake()}else if(CR.fx==="win")confetti();else sfx("ok")}
+  if(CR.win!==null&&crScored!==CR.seq){crScored=CR.seq;
+    var lw=1-CR.win,cl=9-crLeft(lw);
+    if(R){var rr=crRole();if(rr>=0)save(me,"carrom",rr===CR.win?50:5*(rr===0?9-crLeft(0):9-crLeft(1)))}
+    else{save(local[0],"carrom",CR.win===0?50:5*(9-crLeft(0)));save(local[1],"carrom",CR.win===1?50:5*(9-crLeft(1)))}}
+  crDraw();
+  crBotKick();
+}
+var crLastFx=-1;
+function crAnnounce(){var p=CR.turn,yours=R&&crRole()===p;popup('<div style="font-size:2rem">'+(p?'⚫':'⚪')+'</div><b>'+esc(crName(p))+'’s turn</b>'+(yours?'<br>🪔 That’s you!':''),1500,"");sfx("turn")}
+function carrom(){
+  stopAll();show("play");$("who").textContent="🎯 Village Carrom";crAlive=true;crRun=false;crSt=null;crAim=null;
+  cleanups.push(function(){crAlive=false;crRun=false;crSt=null});
+  var key;crBusy=false;
+  if(!R){var cpl=local.filter(function(x){return !x.isBot||x.ammamma}).slice(0,2).map(function(x){return x.name});key=cpl.join("|");
+    if(!CR||CR.mode!=="l"||(CR.names||[]).join("|")!==key){CR=crFresh(CR?CR.seq+1:0,cpl,null);CR.mode="l"}}
+  else if(!CR||CR.mode!=="o"){CR=crFresh(CR?CR.seq+1:0,null,null);CR.mode="o"}
+  crLastTK=-1;crLastFx=CR.seq;crScored=CR.win!==null?CR.seq:-1;
+  if(R){
+    cleanups.push(R.onPeers(crUI));
+    cleanups.push(R.on("crend",function(m){if(m.isMe||!m.data||m.data.seq<=CR.seq)return;crRun=false;crSt=null;CR=m.data;if(!CR.names)CR.names=null;crUI()}));
+    cleanups.push(R.on("crshot",function(m){if(m.isMe||!m.data||crRun||!CR.names)return;crAim=null;crStart(m.data.sx,m.data.vx,m.data.vy,true,m.data.coins,m.data.turn)}));
+    cleanups.push(R.on("crq",function(m){if(!m.isMe&&CR.names&&CR.seq>0)R.emit("crend",CR).catch(noop)}));
+    R.emit("crq",{}).catch(noop);
+  }
+  $("stage").innerHTML="";crUI();
+}
+
+/* Golilla Atta (Brainvita / peg solitaire) */
+function goli(done){
+  var MC=[["#64b5f6","#0d47a1"],["#81c784","#1b5e20"],["#ef5350","#7f0000"],["#ffd54f","#b26a00"],["#ba68c8","#4a0072"]];
+  var D=[[1,0],[-1,0],[0,1],[0,-1]],g,sel,hist,moves,over,lastHop=null;
+  function init(){g=[];for(var r=0;r<7;r++){g[r]=[];for(var c=0;c<7;c++)g[r][c]=((r>=2&&r<=4)||(c>=2&&c<=4))?1:-1}g[3][3]=0;sel=null;hist=[];moves=0;over=false;lastHop=null}
+  function cnt(){var n=0;g.forEach(function(row){row.forEach(function(v){if(v===1)n++})});return n}
+  function tg(r,c){var o=[];D.forEach(function(d){var r2=r+2*d[0],c2=c+2*d[1];if(r2>=0&&r2<7&&c2>=0&&c2<7&&g[r+d[0]][c+d[1]]===1&&g[r2][c2]===0)o.push([r2,c2])});return o}
+  function anyMove(){for(var r=0;r<7;r++)for(var c=0;c<7;c++)if(g[r][c]===1&&tg(r,c).length)return true;return false}
+  function finish(){
+    if(over&&hist.fin)return;over=true;hist.fin=true;
+    var left=cnt(),score=(32-left)*3+(left===1?10:0)+(left===1&&g[3][3]===1?10:0);
+    var msg=left===1?(g[3][3]===1?"Perfect! One marble left in the centre 🏆":"Brilliant! Only one marble left 🎉"):left+" marbles left. Try for just one!";
+    if(left===1){confetti();toast("🔮 Golilla master!")}
+    done(score,msg);
+  }
+  function tap(r,c){
+    if(over)return;var v=g[r][c];
+    if(v===1){sel=(sel&&sel[0]===r&&sel[1]===c)?null:[r,c];sfx("tap");render();return}
+    if(v===0&&sel){
+      var ok=tg(sel[0],sel[1]).some(function(t){return t[0]===r&&t[1]===c});
+      if(!ok){sel=null;render();return}
+      hist.push(JSON.stringify(g));
+      lastHop=[r,c];g[(sel[0]+r)/2][(sel[1]+c)/2]=0;g[sel[0]][sel[1]]=0;g[r][c]=1;sel=null;moves++;
+      sfx("hit");burst("✨",4);render();
+      if(!anyMove()){over=true;after(900,function(){over=false;finish()})}
+    }
+  }
+  function render(){
+    var tgs=sel?tg(sel[0],sel[1]):[],h="";
+    for(var r=0;r<7;r++)for(var c=0;c<7;c++){var v=g[r][c];
+      if(v===-1)h+='<span class="gc none"></span>';
+      else if(v===1){var m=MC[(r*3+c)%5];h+='<button aria-label="Marble at row '+(r+1)+', column '+(c+1)+'" class="gc m'+(sel&&sel[0]===r&&sel[1]===c?' sel':'')+(lastHop&&lastHop[0]===r&&lastHop[1]===c?' hopfx':'')+'" data-gr="'+r+'" data-gc="'+c+'" style="--mc:'+m[0]+';--md:'+m[1]+'"></button>'}
+      else{var t=tgs.some(function(q){return q[0]===r&&q[1]===c});h+='<button class="gc hole'+(t?' tgt':'')+'" data-gr="'+r+'" data-gc="'+c+'"></button>'}}
+    $("stage").innerHTML='<p class="c big">🔮 Marbles left: '+cnt()+' · Moves: '+moves+'</p><div class="gb">'+h+'</div>'+
+      '<div class="pw" style="margin-top:8px"><button class="g" id="gu">↩ Undo</button><button class="g" id="gr2">⟲ Restart</button><button class="gold" id="gf">Finish</button></div>'+
+      '<p class="s" style="margin-top:8px">Physics flow: select a marble, then jump exactly two holes horizontally or vertically over a neighbour. The jumped marble is removed; the moving marble follows a short gravity-like arc and settles in the destination. Diagonal moves are not allowed. This is a rule-based board game with a visual physics animation, not a full real-world physics simulation. Aim to leave one marble, ideally in the centre!</p>';
+    $("stage").querySelectorAll("[data-gr]").forEach(function(b){b.onclick=function(){tap(+b.dataset.gr,+b.dataset.gc)}});
+    $("gu").onclick=function(){if(over||!hist.length)return;g=JSON.parse(hist.pop());moves--;sel=null;sfx("miss");render()};
+    $("gr2").onclick=function(){init();render()};
+    $("gf").onclick=function(){over=false;hist.fin=false;finish()};
+  }
+  init();render();
+}
+/* SOS: Shankh-Om-Shankh (Indian mythology) */
+var SS=null,sosLastTK=-1,sosScored=-1,sosLet="S",sosLastFx=-1;
+var SCOL=["#e53935","#1e88e5","#fb8c00","#8e24aa"],SAV=["🏹","🪈","🐒","🔱"];
+var SFACT=["Krishna’s conch is the Panchajanya, blown to open the Kurukshetra war.","Arjuna’s conch was called Devadatta.","Vishnu holds the conch (Shankh), the Sudarshana chakra, the mace and the lotus.","Om is called the primordial sound in the Upanishads.","Hanuman leapt across the ocean to reach Lanka.","Shiva’s damaru is said to have sounded the first rhythms of creation.","Conch shells are blown at the start of many pujas to welcome the divine."];
+function sosFresh(seq,n,names,ids,size){
+  var N=size||7,b=[],o=[],sc=[],i;for(i=0;i<N*N;i++){b.push("");o.push(-1)}for(i=0;i<n;i++)sc.push(0);
+  return{n:n,N:N,b:b,o:o,sc:sc,lines:[],turn:0,names:names||null,ids:ids||null,seq:seq||0,tk:(seq||0)+1,win:null,tie:false,fi:0,fx:null,mode:R?"o":"l",msg:"Place a Shankh 🐚 (S) or an Om 🕉️ (O). Make Shankh–Om–Shankh to score!"};
+}
+function sosName(p){return SS.names&&SS.names[p]||("Player "+(p+1))}
+function sosRole(){if(!R)return SS.turn;if(!SS.ids)return -1;return SS.ids.indexOf(myId())}
+function sosOver(){return SS.win!==null||SS.tie}
+function sosBotTurn(){return !R&&!!SS&&!!SS.names&&!sosOver()&&isAmma(sosName(SS.turn))}
+function sosCanAct(){return SS&&SS.names&&!sosOver()&&sosRole()===SS.turn&&!sosBotTurn()}
+var sosBusy=false;
+function sosBotMove(){
+  var N=SS.N,empty=[],i;for(i=0;i<N*N;i++)if(!SS.b[i])empty.push(i);
+  if(!empty.length)return null;
+  if(Math.random()<[.55,.25,.05][AMMA_LVL]){i=empty[Math.floor(Math.random()*empty.length)];return{r:Math.floor(i/N),c:i%N,l:Math.random()<.5?"S":"O"}}
+  function gain(k,l){SS.b[k]=l;var g=sosFind(Math.floor(k/N),k%N).length;SS.b[k]="";return g}
+  var best=null;
+  empty.forEach(function(k){["S","O"].forEach(function(l){
+    var g=gain(k,l),risk=0;
+    if(g===0){SS.b[k]=l;
+      for(var a=0;a<empty.length;a++){var j=empty[a];if(j===k)continue;for(var b=0;b<2;b++){var g2=gain(j,b?"O":"S");if(g2>risk)risk=g2}}
+      SS.b[k]=""}
+    var val=g>0?10+g*10:-risk*8+Math.random()*.5;
+    if(!best||val>best.val)best={val:val,r:Math.floor(k/N),c:k%N,l:l};
+  })});
+  return best;
+}
+function sosBotKick(){
+  if(sosBusy||!sosBotTurn())return;sosBusy=true;
+  after(1000,function(){sosBusy=false;if(!sosBotTurn())return;var m=sosBotMove();if(!m)return;
+    var old=sosLet;sosLet=m.l;var before=SS.sc[SS.turn];sosPlay(m.r,m.c,true);sosLet=old;
+    if(SS&&SS.names&&SS.sc.some(function(v){return v>0})&&!sosOver()&&isAmma(sosName(SS.turn)))ammaSay("nice");
+    sosUI()});
+}
+function sosFind(r,c){
+  var N=SS.N,b=SS.b,res=[],D=[[0,1],[1,0],[1,1],[1,-1]],ch=b[r*N+c];
+  function at(rr,cc){return rr>=0&&cc>=0&&rr<N&&cc<N?b[rr*N+cc]:""}
+  D.forEach(function(d){var dr=d[0],dc=d[1];
+    if(ch==="O"){if(at(r-dr,c-dc)==="S"&&at(r+dr,c+dc)==="S")res.push([r-dr,c-dc,r+dr,c+dc])}
+    else{[1,-1].forEach(function(sg){if(at(r+sg*dr,c+sg*dc)==="O"&&at(r+2*sg*dr,c+2*sg*dc)==="S")res.push([r,c,r+2*sg*dr,c+2*sg*dc])})}});
+  return res;
+}
+function sosPlay(r,c,force){
+  if(force){if(!SS||!SS.names||sosOver())return}else if(!sosCanAct())return;var N=SS.N,i=r*N+c;if(SS.b[i])return;
+  var p=SS.turn;SS.b[i]=sosLet;SS.o[i]=p;
+  var ln=sosFind(r,c);ln.forEach(function(l){SS.lines.push(l.concat(p))});SS.sc[p]+=ln.length;
+  var full=SS.b.every(function(x){return x});
+  if(full){var mx=Math.max.apply(null,SS.sc),w=[];SS.sc.forEach(function(v,k){if(v===mx)w.push(k)});
+    if(w.length===1)SS.win=w[0];else SS.tie=true;SS.fx="end";
+    SS.msg=(SS.tie?"It’s a draw! 🪔":"🏆 "+sosName(SS.win)+" wins! Jai Shri Krishna!")}
+  else if(ln.length){SS.fx="sos";SS.fi=Math.floor(Math.random()*SFACT.length);SS.msg=sosName(p)+" made "+(ln.length>1?ln.length+" SOS lines":"an SOS")+"! Play again."}
+  else{SS.fx="place";SS.turn=(p+1)%SS.n;SS.tk=SS.seq+1;SS.msg=sosName(p)+" placed "+(sosLet==="S"?"a Shankh 🐚":"an Om 🕉️")+"."}
+  SS.seq++;if(R)R.emit("sos",SS).catch(noop);sosUI();
+}
+function sosFx(){
+  if(!SS.fx||SS.seq===sosLastFx)return;sosLastFx=SS.seq;
+  if(SS.fx==="sos"){var l=SS.lines[SS.lines.length-1],p=l[4];sfx("home");burst("🐚",6);burst("🕉️",4);
+    popup('<div style="font-size:2rem">🐚🕉️🐚</div><b>SOS! Shankh–Om–Shankh</b><br>'+SAV[p]+" "+esc(sosName(p))+' scores!<br><small>'+SFACT[SS.fi]+'</small>',2600,"")}
+  else if(SS.fx==="place")sfx("tap");
+  else if(SS.fx==="end"){confetti()}
+}
+function sosUI(){
+  if(!SS)return;var st=$("stage"),i,h;
+  if(!SS.names){
+    var ps=acPeers();h='<p class="big c">SOS · Shankh–Om–Shankh<br><small class="s">2 to 4 players</small></p>'+ps.slice(0,4).map(function(x,k){return'<div class="lb" style="justify-content:center"><span>'+SAV[k]+" "+esc(x.presence.name||"Player")+(x.isMe?" (you)":"")+'</span></div>'}).join("");
+    h+=ps.length>=2?'<button class="gold full" id="sosgo" style="margin-top:10px">Start with '+Math.min(4,ps.length)+' players</button>':'<p class="s c">Share the room code. At least two players needed.</p>';
+    st.innerHTML=h;var gb=$("sosgo");if(gb)gb.onclick=function(){var q=acPeers().slice(0,4);SS=sosFresh(SS.seq+1,q.length,q.map(function(x){return x.presence.name||"Player"}),q.map(function(x){return x.peer}),7);SS.mode="o";SS.fx=null;SS.seq++;R.emit("sos",SS).catch(noop);sosUI()};
+    return;
+  }
+  var N=SS.N,cells="";
+  for(i=0;i<N*N;i++){var v=SS.b[i],o=SS.o[i];
+    cells+='<button class="sosc" data-i="'+i+'"'+(v?' style="background:'+SCOL[o]+'55"':'')+'>'+(v==="S"?"🐚":v==="O"?"🕉️":"")+'</button>'}
+  var svg='<svg class="sosv" viewBox="0 0 '+N+' '+N+'" preserveAspectRatio="none">'+SS.lines.map(function(l){return'<line x1="'+(l[1]+.5)+'" y1="'+(l[0]+.5)+'" x2="'+(l[3]+.5)+'" y2="'+(l[2]+.5)+'" stroke="'+SCOL[l[4]]+'" stroke-width=".14" stroke-linecap="round" opacity=".9"/>'}).join("")+'</svg>';
+  var sc=SS.sc.map(function(v,k){return'<span style="white-space:nowrap;margin:0 6px;'+(k===SS.turn&&!sosOver()?'font-weight:800;color:var(--acc)':'')+'">'+(k===SS.turn&&!sosOver()?'▶ ':'')+SAV[k]+' '+esc(sosName(k))+' <b style="color:'+SCOL[k]+'">'+v+'</b></span>'}).join("");
+  h='<div class="c" style="margin-bottom:6px">'+sc+'</div><div class="sosw"><div class="sosb" style="grid-template-columns:repeat('+N+',1fr)">'+cells+'</div>'+svg+'</div>'+
+    '<p class="s c" style="margin:8px 0">'+esc(SS.msg)+'</p>';
+  if(sosOver())h+='<button class="gold full" id="sosnew">Play again</button>';
+  else if(sosCanAct())h+='<div class="pw"><button class="'+(sosLet==="S"?"gold":"g")+'" id="sosS">🐚 S · Shankh</button><button class="'+(sosLet==="O"?"gold":"g")+'" id="sosO">🕉️ O · Om</button></div>';
+  else h+='<p class="s c">'+(sosRole()>=0?"Waiting for "+esc(sosName(SS.turn))+"…":"You’re watching this match.")+'</p>';
+  h+='<details class="s" style="margin-top:8px"><summary><b>How to play</b></summary><p>Take turns placing a Shankh 🐚 (the letter S) or an Om 🕉️ (the letter O) in any empty square. Whoever forms <b>S–O–S</b> in a straight line (across, down or diagonal) scores a point and plays again. When the board is full, the most points wins.<br>🏹 Arjuna, 🪈 Krishna, 🐒 Hanuman and 🔱 Parvati are the four player avatars.</p></details>';
+  st.innerHTML=h;
+  st.querySelectorAll(".sosc").forEach(function(b){b.onclick=function(){var k=+b.dataset.i;sosPlay(Math.floor(k/N),k%N)}});
+  var bs=$("sosS"),bo=$("sosO"),bn=$("sosnew");
+  if(bs)bs.onclick=function(){sosLet="S";sosUI()};if(bo)bo.onclick=function(){sosLet="O";sosUI()};
+  if(bn)bn.onclick=function(){var o=SS;SS=sosFresh(o.seq+1,o.n,o.names,o.ids,o.N);SS.mode=o.mode;SS.seq++;if(R)R.emit("sos",SS).catch(noop);sosUI()};
+  if(SS.tk!==sosLastTK&&!sosOver()){sosLastTK=SS.tk;popup('<div style="font-size:2rem">'+SAV[SS.turn]+'</div><b>'+esc(sosName(SS.turn))+'’s turn</b>',1100,"");sfx("turn")}
+  sosFx();
+  sosBotKick();
+  if(sosOver()&&sosScored!==SS.seq){sosScored=SS.seq;
+    var pts=function(p){return(SS.win===p?50:0)+5*SS.sc[p]};
+    if(R){var rr=sosRole();if(rr>=0)save(me,"sos",pts(rr))}
+    else for(var k2=0;k2<SS.n;k2++)save(local[k2],"sos",pts(k2))}
+}
+function sosGame(){
+  stopAll();show("play");$("who").textContent="🕉️ SOS · Shankh–Om–Shankh";
+  if(!R){var nm2=local.filter(function(x){return !x.isBot||x.ammamma}).slice(0,4).map(function(x){return x.name}),key=nm2.join("|");
+    if(!SS||SS.mode!=="l"||(SS.names||[]).join("|")!==key){SS=sosFresh(SS?SS.seq+1:0,nm2.length,nm2,null,7);SS.mode="l"}}
+  else if(!SS||SS.mode!=="o"){SS=sosFresh(SS?SS.seq+1:0,0,null,null,7);SS.mode="o"}
+  sosBusy=false;sosLastTK=-1;sosLastFx=SS.seq;sosScored=sosOver()?SS.seq:-1;
+  if(R){
+    cleanups.push(R.onPeers(sosUI));
+    cleanups.push(R.on("sos",function(m){if(m.isMe||!m.data||m.data.seq<=SS.seq)return;SS=m.data;sosUI()}));
+    cleanups.push(R.on("sosq",function(m){if(!m.isMe&&SS.names&&SS.seq>0)R.emit("sos",SS).catch(noop)}));
+    R.emit("sosq",{}).catch(noop);
+  }
+  sosUI();
+}
+
+
+/* Rama–Sita Chits: secret-role pass-and-play. One Rama, one Sita, one Hanuman, one Ravana. */
+function ramaSitaChitsGame(names){
+ names=(names||[]).slice(0,8);if(names.length<4){$('stage').innerHTML='<div class="c"><p class="big">🕵️ Rama–Sita Chits</p><p>You need at least 4 players. Go back and add 4–8 player names in Pass & Play.</p><button class="gold full" id="rsBack">Back to games</button></div>';$('rsBack').onclick=function(){show('hub')};return;}
+ var scores=names.map(function(){return 0}),round=0,roles=[],roleIndex=0,ramaIndex=-1,sitaIndex=-1,hanumanIndex=-1,ravanaIndex=-1,revealed=[],stageMode='';
+ function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+ function newRound(){round++;roles=shuffle(['Rama','Sita','Hanuman','Ravana'].concat(names.slice(4).map(function(_,i){return 'Vanara '+(i+1)})));revealed=[];roles.forEach(function(r,i){if(r==='Rama')ramaIndex=i;if(r==='Sita')sitaIndex=i;if(r==='Hanuman')hanumanIndex=i;if(r==='Ravana')ravanaIndex=i});roleIndex=0;dealScreen()}
+ function dealScreen(){stageMode='deal';if(roleIndex>=names.length){guessScreen();return;}var n=names[roleIndex];$('stage').innerHTML='<div class="c"><p class="big">Round '+round+' · Secret Chits</p><p>Pass the device to <b>'+esc(n)+'</b>. Make sure nobody else is looking.</p><button class="gold full" id="rsReveal">Reveal my chit</button></div>'; $('rsReveal').onclick=function(){var role=roles[roleIndex];$('stage').innerHTML='<div class="c"><p class="s">Only '+esc(n)+' should look at the screen.</p><p class="big" style="font-size:34px">'+({Rama:'🏹',Sita:'🌺',Hanuman:'🐒',Ravana:'👑'}[role]||'🙏')+'</p><p class="big">You are '+esc(role)+'!</p><p>Remember your role. Do not tell anyone.</p><button class="gold full" id="rsHide">Hide chit & pass device</button></div>'; $('rsHide').onclick=function(){roleIndex++;dealScreen()};};}
+ function guessScreen(){stageMode='guess';$('stage').innerHTML='<div class="c"><p class="big">🏹 Rama, find Sita!</p><p>Only '+esc(names[ramaIndex])+' (Rama) should choose. Who do you think has Sita’s chit?</p><div class="grid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">'+names.map(function(n,i){return i===ramaIndex?'':'<button class="g" data-guess="'+i+'">'+esc(n)+'</button>'}).join('')+'</div><p class="s">Do not select yourself. Choose one player.</p></div>';$('stage').querySelectorAll('[data-guess]').forEach(function(b){b.onclick=function(){scoreRound(+b.dataset.guess)}})}
+ function scoreRound(guess){var found=guess===sitaIndex;scores[ramaIndex]+=found?1000:0;if(!found)scores[sitaIndex]+=1000;scores[hanumanIndex]+=900;scores[ravanaIndex]-=500;var top=Math.max.apply(null,scores);var reached=scores.some(function(v){return v>=10000});var leaders=names.filter(function(n,i){return scores[i]===top});var html='<div class="c"><p class="big">'+(found?'🎉 Rama found Sita!':'🌺 Rama could not find Sita')+'</p><p><b>Rama:</b> '+esc(names[ramaIndex])+'<br><b>Sita:</b> '+esc(names[sitaIndex])+'<br><b>Rama guessed:</b> '+esc(names[guess])+'</p><p>Round points: '+(found?'Rama +1000, Sita +0':'Rama +0, Sita +1000')+' · Hanuman +900 · Ravana −500</p><h3>Scoreboard</h3>'+names.map(function(n,i){return '<div class="lb"><span>'+esc(n)+(i===ramaIndex?' 🏹':i===sitaIndex?' 🌺':i===hanumanIndex?' 🐒':i===ravanaIndex?' 👑':'')+'</span><b>'+scores[i]+'</b></div>'}).join('');
+ if(reached){var win=names.filter(function(n,i){return scores[i]===top});html+='<p class="big">🏆 '+esc(win.join(' & '))+' wins!</p><p>10,000-point threshold reached. Highest score wins; tied highest scores share the win.</p><button class="gold full" id="rsRestart">New game</button>';}else{html+='<button class="gold full" id="rsNext">Next round</button>';}html+='<button class="g full" id="rsExit">Back to games</button></div>';$('stage').innerHTML=html;if(reached)$('rsRestart').onclick=function(){scores=names.map(function(){return 0});round=0;newRound()};else $('rsNext').onclick=newRound;$('rsExit').onclick=function(){show('hub')};}
+ newRound();
+}
+
+/* Itihasa Memory Match — pass-and-play, one turn per player */
+function memoryGame(done,players,ramaSitaMode){
+ var base=ramaSitaMode?[{id:"rama",icon:"🏹",name:"Sri Rama"},{id:"sita",icon:"🌺",name:"Sita Devi"},{id:"lakshmana",icon:"🏹",name:"Lakshmana"},{id:"hanuman",icon:"🐒",name:"Hanuman"},{id:"bharata",icon:"🙏",name:"Bharata"},{id:"jatayu",icon:"🦅",name:"Jatayu"},{id:"bow",icon:"🪃",name:"Shiva Dhanussu"},{id:"setu",icon:"🌉",name:"Rama Setu"}]:[{id:"rama",icon:"🏹",name:"Rama"},{id:"sita",icon:"🌺",name:"Sita"},{id:"hanuman",icon:"🐒",name:"Hanuman"},{id:"krishna",icon:"🪈",name:"Krishna"},{id:"ganesha",icon:"🐘",name:"Ganesha"},{id:"shiva",icon:"🔱",name:"Shiva"},{id:"lakshmi",icon:"🪷",name:"Lakshmi"},{id:"garuda",icon:"🦅",name:"Garuda"}];
+ players=(players&&players.length?players:["Player 1","Player 2"]).slice(0,8);
+ var seen={},botBusy=false;
+ var scores=players.map(function(){return 0}),turn=0,deck=[],open=[],matched={},moves=0,misses=0,locked=false,seconds=0,finished=false,timer=null;
+ base.concat(base).forEach(function(c,i){deck.push({id:c.id,icon:c.icon,name:c.name,key:i})});
+ for(var i=deck.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),tmp=deck[i];deck[i]=deck[j];deck[j]=tmp}
+ function finish(){if(finished)return;finished=true;if(timer)clearInterval(timer);var best=Math.max.apply(null,scores),w=players.filter(function(n,i){return scores[i]===best});var score=Math.max(0,best*10+Math.max(0,60-seconds)-misses*2);done(score,(w.length>1?"Tie: ":"")+w.join(" & ")+" win! Final pairs — "+scores.map(function(v,i){return players[i]+": "+v}).join(" · "));}
+ function draw(){
+  var pairs=Object.keys(matched).length;
+  var html=`<div class="c"><p class="big">${ramaSitaMode?"💞 Rama–Sita Memory Match":"🧠 Itihasa Memory Match"}</p><p class="s">One turn per player: flip two cards. Match = score a pair and play again; miss = next player.</p><p class="big" style="color:var(--acc)">▶ ${esc(players[turn])}’s turn</p><div class="row c"><span>Pairs: ${pairs}/8</span><span>Moves: ${moves}</span><span>Time: ${seconds}s</span></div><div class="row c" style="flex-wrap:wrap">`;
+  players.forEach(function(n,i){html+=`<span class="lb" style="padding:6px 9px;${i===turn?'border:2px solid var(--acc);':''}">${esc(n)}: <b>${scores[i]}</b></span>`});
+  html+='</div></div><div class="memgrid" aria-label="Indian mythology memory cards">';
+  deck.forEach(function(c,i){var face=matched[c.id]||open.indexOf(i)!==-1;html+='<button class="memcard'+(face?(matched[c.id]?' matched':' revealed'):'')+'" data-mi="'+i+'" aria-label="'+(face?c.name:'Hidden memory card')+'" '+(matched[c.id]?'disabled':'')+'>'+(face?'<span class="mi">'+c.icon+'</span><small>'+c.name+'</small>':'<span class="mi">🪔</span><small>Tap to reveal</small>')+'</button>'});
+  html+='</div><p class="s c">Remember the positions and pass the device fairly.</p>';$('stage').innerHTML=html;$('stage').querySelectorAll('[data-mi]').forEach(function(b){b.onclick=function(){if(isAmma(players[turn]))return;flip(+b.dataset.mi)}});
+  botCheck();
+ }
+ function pickBot(){
+  var forget=[.5,.25,.05][AMMA_LVL],cand=[],unseen;
+  deck.forEach(function(c,i){if(!matched[c.id]&&open.indexOf(i)===-1)cand.push(i)});
+  if(!cand.length)return -1;
+  if(open.length===1){
+   var f=open[0],mate=cand.filter(function(i){return deck[i].id===deck[f].id&&seen[i]})[0];
+   if(mate!==undefined&&Math.random()>forget)return mate;
+   unseen=cand.filter(function(i){return !seen[i]});
+   var pool=unseen.length?unseen:cand;return pool[Math.floor(Math.random()*pool.length)];
+  }
+  var byId={},pairIdx=-1;
+  cand.forEach(function(i){if(seen[i]){(byId[deck[i].id]=byId[deck[i].id]||[]).push(i)}});
+  Object.keys(byId).forEach(function(k){if(pairIdx<0&&byId[k].length>=2)pairIdx=byId[k][0]});
+  if(pairIdx>=0&&Math.random()>forget)return pairIdx;
+  unseen=cand.filter(function(i){return !seen[i]});
+  var pool2=unseen.length?unseen:cand;return pool2[Math.floor(Math.random()*pool2.length)];
+ }
+ function botCheck(){
+  if(finished||locked||botBusy||open.length>1||!isAmma(players[turn]))return;
+  botBusy=true;
+  after(950,function(){botBusy=false;if(finished||locked||open.length>1||!isAmma(players[turn]))return;var k=pickBot();if(k>=0)flip(k)});
+ }
+ function flip(i){if(finished||locked||open.indexOf(i)!==-1||matched[deck[i].id])return;open.push(i);seen[i]=true;sfx("tap");if(open.length===2){moves++;var a=deck[open[0]],b=deck[open[1]];if(a.id===b.id){matched[a.id]=true;scores[turn]++;if(isAmma(players[turn]))ammaSay("nice");open=[];sfx("ok");burst(a.icon,4);draw();if(Object.keys(matched).length===8)after(450,finish);return}misses++;locked=true;draw();after(850,function(){open=[];locked=false;turn=(turn+1)%players.length;draw()});return}draw()}
+ timer=every(1000,function(){if(finished)return;seconds++;draw()});draw();
+}
+var GAMES={trivia:trivia,dahan:dahan,deer:deer,brainvita:goli,memory:memoryGame,ramasita:memoryGame};
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){try{
+if(!window.THREE||(window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches))return;var T=THREE,el=document.getElementById("hero");
+var W=Math.min(el.clientWidth||320,420),H=170;
+var sc=new T.Scene(),cam=new T.PerspectiveCamera(40,W/H,.1,100);cam.position.set(0,2.2,7);cam.lookAt(0,.6,0);
+var r=new T.WebGLRenderer({antialias:true,alpha:true});r.setSize(W,H);r.setPixelRatio(Math.min(2,window.devicePixelRatio||1));el.appendChild(r.domElement);
+var g=new T.Group();sc.add(g);
+var pts=[[.05,0],[.6,.04],[1.1,.2],[1.4,.55],[1.5,.7],[1.35,.72],[1.2,.45],[.8,.3],[.05,.25]].map(function(p){return new T.Vector2(p[0],p[1])});
+var bowl=new T.Mesh(new T.LatheGeometry(pts,40),new T.MeshStandardMaterial({color:0xc2571a,metalness:.35,roughness:.45,side:T.DoubleSide}));g.add(bowl);
+var oil=new T.Mesh(new T.CircleGeometry(1,32),new T.MeshStandardMaterial({color:0xffc107,emissive:0x6a4500,roughness:.2}));oil.rotation.x=-Math.PI/2;oil.position.y=.3;oil.scale.set(.85,.85,.85);g.add(oil);
+var flame=new T.Mesh(new T.ConeGeometry(.2,.7,20),new T.MeshBasicMaterial({color:0xffb300}));flame.position.set(1.0,.95,0);g.add(flame);
+var core=new T.Mesh(new T.SphereGeometry(.09,12,12),new T.MeshBasicMaterial({color:0xfff3b0}));core.position.set(1.0,.78,0);g.add(core);
+var wick=new T.Mesh(new T.CylinderGeometry(.03,.03,.25,8),new T.MeshStandardMaterial({color:0x3b2a1a}));wick.position.set(1.0,.55,0);g.add(wick);
+sc.add(new T.AmbientLight(0x6a4a7a,.9));var dl=new T.DirectionalLight(0xffffff,.7);dl.position.set(3,5,4);sc.add(dl);
+var pl=new T.PointLight(0xffa000,2.2,9);pl.position.set(1,1.2,0);g.add(pl);
+var N=140,pos=new Float32Array(N*3),vel=[];for(var i=0;i<N;i++){pos[i*3]=(Math.random()-.5)*9;pos[i*3+1]=Math.random()*4-1;pos[i*3+2]=(Math.random()-.5)*4;vel.push(.004+Math.random()*.012)}
+var pg=new T.BufferGeometry();pg.setAttribute("position",new T.BufferAttribute(pos,3));
+var sp=new T.Points(pg,new T.PointsMaterial({color:0xffd54f,size:.09,transparent:true,opacity:.9}));sc.add(sp);
+var t0=0;function loop(t){requestAnimationFrame(loop);if(document.hidden)return;t*=.001;
+ g.rotation.y=t*.7;g.position.y=Math.sin(t*1.4)*.12;
+ var f=1+Math.sin(t*14)*.12+Math.random()*.08;flame.scale.set(1/Math.sqrt(f),f,1/Math.sqrt(f));pl.intensity=1.9+Math.random()*.7;
+ for(var i=0;i<N;i++){pos[i*3+1]+=vel[i];if(pos[i*3+1]>3)pos[i*3+1]=-1}pg.attributes.position.needsUpdate=true;
+ r.render(sc,cam)}
+requestAnimationFrame(loop);
+var emo=document.getElementById("emo");if(emo)emo.style.display="none";
+}catch(e){}})();
+</script>
+</body>
+</html>
